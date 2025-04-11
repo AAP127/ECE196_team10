@@ -1,2 +1,2 @@
 ## Meet the Team
-## Aron Bariagabr
+# Aron Bariagabr
