@@ -14,5 +14,6 @@ As a student, it can be difficult to find parking for classes, especially during
 
 ## Our Motivation:
 
+The team chose to tackle this issue because it is a recurring problem that affects both students and faculty, often leading to negative consequences. These include wasted time and the need to park in illegal spaces-- resulting in the risk of recieving overpriced parking tickets. This challenge also extends beyond on-campus parking and includes many public parking strutures. Our motivation comes from not only how common this issue is, but also from experiencing it ourselves. By tackling this problem, we aim to create a solution that improves campus life for students and faculty.
 
 ## Current Solutions:
