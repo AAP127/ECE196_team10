@@ -20,5 +20,5 @@ The team chose to tackle this issue because it is a recurring problem that affec
 
 Although parking sensors have already been implemented, they are not functioning as intended. Specifically, the number of available spots displayed does not accurately reflect the actual availability on each parking level. In some cases, the system shows a green light indicating an open space, even when the spot is already occupied. Ensuring the sensors operate as designed would greatly improve parking accuracy and reduce confusion for drivers.
 
-![Image of full parking MTS Parking](source/MTS_Parking.jpg)
+https://github.com/AAP127/ECE196_team10/blob/main/source/MTS%20Parking.jpg
 
