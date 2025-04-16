@@ -24,6 +24,5 @@ Although parking sensors have already been implemented, they are not functioning
 
 
 ![Image of full parking MTS](source/MTS_Parking.jpg)
-![Image of full parking MTS](source/MTS_Parking_1.jpg)
 ![Image of full parking MTS](source/IMG_0844.jpg)
 
