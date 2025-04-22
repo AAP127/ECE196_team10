@@ -26,3 +26,8 @@ Although parking sensors have already been implemented, they are not functioning
 ![Image of incorrect sensor UCSD- 1](source/ucsd_err1.jpg)
 ![Image of incorrect sensor UCSD- 2](source/ucsd_err2.jpg)
 
+
+
+
+## [How can we solve this?](https://aap127.github.io/ECE196_team10/solution)
+

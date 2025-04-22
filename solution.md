@@ -1,15 +1,18 @@
 # Our Solution
 
+### \* [What is the problem here?](https://aap127.github.io/ECE196_team10/problem)
 
+
+
+
+## Description
 ![Sketch of Solution Pipeline](source/parking_diagram_2.png)
 
-
-### Description
 - The solution involves the usage of a proximity sensor, which detects a car being present, communicating to a microcontroller. 
 - This microcontroller communicates parking data to a host computer
 - The computer can then update the website with accurate parking information.
 
-### Technology Highlights
+## Technology Highlights
 \* Key technological usage in the project includes:
 - Proximity sensor/ wiring
 - Microcontroller 
