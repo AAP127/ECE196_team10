@@ -3,8 +3,9 @@
 Welcome to our team's website! We are interested in improving student experiences with parking for class. For more information on our problem focus, or about us, please see the links below.
 
 
-### [Our Focus](https://aap127.github.io/ECE196_team10/problem)
+### [What is the Problem?](https://aap127.github.io/ECE196_team10/problem)
 
+### [How to solve it](https://aap127.github.io/ECE196_team10/solution)
 
 ### [About the Team](https://aap127.github.io/ECE196_team10/team)
 

@@ -2,7 +2,7 @@
 
 ## The Problem:
 
-As a student, it can be difficult to find parking for classes, especially during congested times of the day. This is true for students using campus parking structures, along with those parking in transit center parking to commute via trolley.
+As a student, it can be difficult to find parking for classes, especially during congested times of the day. This is especially true for students using campus parking structures. **Knowing how many spots are available gives better context for a student to understand where they might want to park, if they should show up to campus at all.**
 
 
 ![Image of full parking structure](source/parking_structure.jpg)
@@ -23,6 +23,6 @@ The team chose to tackle this issue because it is a recurring problem that affec
 Although parking sensors have already been implemented, they are not functioning as intended. Specifically, the number of available spots displayed does not accurately reflect the actual availability on each parking level. In some cases, the system shows a green light indicating an open space, even when the spot is already occupied. Ensuring the sensors operate as designed would greatly improve parking accuracy and reduce confusion for drivers.
 
 
-![Image of full parking MTS](source/MTS_Parking.jpg)
-![Image of full parking MTS](source/IMG_0844.jpg)
+![Image of incorrect sensor UCSD- 1](source/ucsd_err1.jpg)
+![Image of incorrect sensor UCSD- 2](source/ucsd_err2.jpg)
 
