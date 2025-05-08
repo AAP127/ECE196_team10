@@ -2,7 +2,7 @@
 
 ### \* [What is the problem here?](https://aap127.github.io/ECE196_team10/problem)
 
-
+### \* [More information on our PCB development](https://aap127.github.io/ECE196_team10/pcb)
 
 
 ## Description

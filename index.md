@@ -7,6 +7,9 @@ Welcome to our team's website! We are interested in improving student experience
 
 ### [How to solve it](https://aap127.github.io/ECE196_team10/solution)
 
+### [Our PCB](https://aap127.github.io/ECE196_team10/pcb)
+
+
 ### [Our Progress/ Updates](https://aap127.github.io/ECE196_team10/progress) (Week 6 Progress Report Included)
 
 ### [About the Team](https://aap127.github.io/ECE196_team10/team)
