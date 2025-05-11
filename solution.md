@@ -34,4 +34,4 @@
 
 
 ## Technology Block Diagram
-![Hardware Block Diagram](source/block_diagram.JPG)
+![Hardware Block Diagram](source/tech_diagram_2.png)
