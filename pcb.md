@@ -2,7 +2,6 @@
 
 ## Overview/ Explaination
 
-# In the schematic below
 
 ## Wiring Schematic
 ![Wiring_Schematic](source/wiring.JPG)
