@@ -1,7 +1,7 @@
 # Our PCB Design
 
 ## Overview/ Explaination
-
+In the PCB schematic below, 
 
 ## Wiring Schematic
 ![Wiring_Schematic](source/wiring.JPG)
