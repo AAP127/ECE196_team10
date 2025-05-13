@@ -6,7 +6,7 @@
 
 
 ## Description
-![Sketch of Solution Pipeline](source/parking_diagram_2.png)
+![Sketch of Solution Pipeline](source/solution/solution_diagram_2.png)
 
 - The solution involves the usage of a proximity sensor, which detects a car being present, communicating to a microcontroller. 
 - This microcontroller communicates parking data to a host computer
@@ -30,8 +30,8 @@
 
 
 ## Our Milestones
-![Milestone Timeline Image](source/milestone_timeline.JPG)
+![Milestone Timeline Image](source/solution/milestone_timeline.JPG)
 
 
 ## Technology Block Diagram
-![Hardware Block Diagram](source/tech_diagram_2.png)
+![Hardware Block Diagram](source/solution/tech_diagram_2.png)

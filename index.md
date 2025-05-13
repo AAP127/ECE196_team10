@@ -15,6 +15,6 @@ Welcome to our team's website! We are interested in improving student experience
 ### [About the Team](https://aap127.github.io/ECE196_team10/team)
 
 
-![Geisel Library](source/geisel.jpg)
-![South Parking Structure](source/south.jpg)
+![Geisel Library](source/index/geisel.jpg)
+![South Parking Structure](source/index/south.jpg)
 

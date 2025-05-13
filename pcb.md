@@ -11,14 +11,14 @@ HC-SR04 ultrasonic sensors to detect vehicle presence. Power and ground are rout
  
 
 ## Wiring Schematic
-![Wiring_Schematic](source/ECE196PCBSchem.jpg)
+![Wiring_Schematic](source/pcb/ECE196PCBSchem.jpg)
 
 
 
 ## PCB Schematic and Diagram
 
-![PCB_Diagram](source/ECE196PCBschem2.jpg)
-![PCB_Model](source/pcb_model.JPG)
+![PCB_Diagram](source/pcb/ECE196PCBschem2.jpg)
+![PCB_Model](source/pcb/pcb_model.JPG)
 
 
 ## Some development updates/ challenges
