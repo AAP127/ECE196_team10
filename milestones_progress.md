@@ -7,9 +7,25 @@
   <a href="/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
 </nav>
 
+# Our Milestones and Progress
 
-# Meet the Team
 
-![Team Photo](source/team.jpg)
 
-Aron Bariagabr (Left), Aatash Pestonjamasp (Middle), Fernando Salgado (Right)
+## Our Milestones
+![Milestone Timeline Image](source/solution/milestone_timeline.JPG)
+
+
+
+## Updates
+
+
+### Week 6 Updates:
+
+Website: Our website has a home page with seperated sections as required.
+
+Poster: Our poster draft can be found [here](https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing)
+
+Video:
+
+- We have identified that Davinchi Resolve is a free video editing software we should be able to use in video creation.
+- Our brainstorming document link can be found [here](https://docs.google.com/document/d/10_ftLWyBoUnVmPoIE4VHaFJpjuLpyQf4ek2ec_xqJh0/edit?usp=sharing) 
