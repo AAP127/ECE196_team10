@@ -32,10 +32,3 @@ HC-SR04 ultrasonic sensors to detect vehicle presence. Power and ground are rout
 ![PCB_Model](source/pcb/pcb_model.JPG)
 
 
-## Some development updates/ challenges
-- In the development process, we have had to resort to our original ultrasonic sensors (HC-SR04), 
-as the waterproof ones we purchased for robustness (JSN-SR04) do not appear to communicate correctly in our setup.
-
-- Our HC-SR04 sensor claims to operate at 3.3V, however we found that it would not correctly report distance at this voltage.
-As such, we will need to modify our PCB to pull sensor power from 5V. 
-We will also need to use a logic level shifter to convert signals from the sensors to be 3.3V high level logic to be read by our ESP32 mini.

@@ -16,17 +16,13 @@
 Currently, we have identified two key concerns with the current student experience of parking on campus: **Information Distribution** and **Data Collection**
 
 #### Information Distribution
-Students are currently limited to basing their knowledge of current parking on the historical data from the first two weeks of the quarter. We propose a website which displays the current availability of parking spots with realtime or near-relatime update frequency. The site report the information collected by parking sensors in campus parking structures, greatly improving accessibility.
+Students are currently limited to basing their knowledge of current parking on the historical data from the first two weeks of the quarter. <u> We propose a website which displays the current availability of parking spots with realtime or near-relatime update frequency </u>. This information can be viewed from anywhere and doesn't require the usage of a phone, improving accessibility and student planning ability.
 
-
-
-
-- The solution involves the usage of a proximity sensor, which detects a car being present, communicating to a microcontroller. 
-- This microcontroller communicates parking data to a host computer
-- The computer can then update the website with accurate parking information.
 
 
 #### Data Collection
+<u>To more reliably collect information for the website, we propose the deployment of per-parking-spot occupancy detection devices.</u> These consist of a microcontroller and ultrasonic sensor, which are connected and indicate status via our team's PCB. The device will detect if a vehicle is present and communicate this is a computer or other server device which updates the website for students to view. For students actively inside the parking structure, indicator lights are also present, showing if a spot is occupied and what type of spot it is.
+
 
 
 ## Technology Block Diagram
