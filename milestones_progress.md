@@ -8,28 +8,60 @@
 </nav>
 
 # Our Milestones and Progress
+This page contains our milestones and project progress. Additionally, the progress of our presentation materials- this includes our website, poster, and video, can be found below.
+
+
+## Milestones
+![Milestone Timeline Image](source/milestones_updates/milestones.png)
 
 
 
-## Our Milestones
-![Milestone Timeline Image](source/solution/milestone_timeline.JPG)
+## Project Updates
 
 
 
-## Updates
+#### Week 7
+- We created our device algorithm to mark a spot as detected. At a high level, it cosists of using an average of detections over the last second to smooth out any extraneous values the sensor may pick up.
+- We created an example python pipeline to read sensor values and display changes in parking data. Now that we have gotten the device's reported data into a language via serial, we are ready to attempt to expand to wireless communication.
+  
+<img src="source/milestones_updates/algorithm_example.JPG" alt="Image of algorithm operation" width="50%" height="auto">
 
-
-## Some development updates/ challenges
-- In the development process, we have had to resort to our original ultrasonic sensors (HC-SR04), 
-as the waterproof ones we purchased for robustness (JSN-SR04) do not appear to communicate correctly in our setup.
-
-- Our HC-SR04 sensor claims to operate at 3.3V, however we found that it would not correctly report distance at this voltage.
-As such, we will need to modify our PCB to pull sensor power from 5V. 
-We will also need to use a logic level shifter to convert signals from the sensors to be 3.3V high level logic to be read by our ESP32 mini.
+<img src="source/milestones_updates/python_serial.JPG" alt="Image of python serial detections" width="30%" height="auto">
 
 
 
-### Week 6 Updates:
+#### Week 6
+- We spent time this week brainstorming how to modify our PCB, given the issues posed by the ultrasonic sensors not working with 3.3V. We ultimately decided to order logic level shifters to covert between 3.3V and 5V, ensuring that the HC-SR04 output is recieved as 3.3V level high. An image of this modified setup can be seen below; note that this setup is now able to use the ESP-32 vs an Arduino due to the level shifter.
+- Challenges:
+  -  We ordered waterproof JSN-SR04 sensors which did not correctly report distance. We spent a large portion of time debugging this, ultimately setting our progress back. As such, and combined with the time spent brainstorming for our PCB, our milestone timeline was pushed back one week to accomodate for testing sensor detection later on.
+<img src="source/milestones_updates/shifter_setup.jpg" alt="Image of sensor setup with logic shifter" width="50%" height="auto">
+
+
+
+
+#### Week 5: 
+- We created our webfront which we can later add our parking availability metrics to for users. We also got the HC-SR04 ultrasonic sensors to communicate with the computer via serial monitor in Arduino IDE. Images of both can bee seen below.
+- Challenges: 
+  - We realized the HC-SR04 sensors, despite advertising the ability to work with 3.3V input voltage, were unreliable or just not working. This means we will need to modify our PCB to pull power from the 5V header of the ESP-32. 
+
+<img src="source/milestones_updates/webfront.png" alt="Image of webfront" width="50%" height="auto">
+
+<img src="source/milestones_updates/week5_serial.JPG" alt="Image of serial monitor" width="40%" height="auto">
+
+<img src="source/milestones_updates/basic_setup.jpg" alt="Image of sensor setup" width="50%" height="auto">
+
+
+## Final Presentation Updates
+
+#### Week 8:
+Website: The required sections of the website can be seen here on on the various other pages of this site.
+
+Poster: [Link](https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing)
+
+Video Outline: [Link](https://docs.google.com/document/d/10_ftLWyBoUnVmPoIE4VHaFJpjuLpyQf4ek2ec_xqJh0/edit?usp=sharing)
+
+
+#### Week 6:
 
 Website: Our website has a home page with seperated sections as required.
 
