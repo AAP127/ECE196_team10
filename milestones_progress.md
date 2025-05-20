@@ -31,9 +31,10 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 6
-- We spent time this week brainstorming how to modify our PCB, given the issues posed by the ultrasonic sensors not working with 3.3V. We ultimately decided to order logic level shifters to covert between 3.3V and 5V, ensuring that the HC-SR04 output is recieved as 3.3V level high. An image of this modified setup can be seen below; note that this setup is now able to use the ESP-32 vs an Arduino due to the level shifter.
+- We spent time this week brainstorming how to modify our PCB, given the issues posed by the ultrasonic sensors not working with 3.3V. We ultimately decided to order logic level shifters to convert between 3.3V and 5V, ensuring that the HC-SR04 output is recieved as 3.3V level high. An image of this modified setup can be seen below; note that this setup is now able to use the ESP-32 vs an Arduino due to the level shifter.
 - Challenges:
   -  We ordered waterproof JSN-SR04 sensors which did not correctly report distance. We spent a large portion of time debugging this, ultimately setting our progress back. As such, and combined with the time spent brainstorming for our PCB, our milestone timeline was pushed back one week to accomodate for testing sensor detection later on.
+  
 <img src="source/milestones_updates/shifter_setup.jpg" alt="Image of sensor setup with logic shifter" width="50%" height="auto">
 
 

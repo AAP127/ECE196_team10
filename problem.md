@@ -26,7 +26,7 @@ As a student, it can be difficult to find parking for classes, especially during
 
 ## Our Motivation:
 
-The team chose to tackle this issue because it is a recurring problem that affects both students and faculty, often leading to negative consequences. These include wasted time and the need to park in illegal spaces-- resulting in the risk of recieving overpriced parking tickets. This challenge also extends beyond on-campus parking and includes many public parking strutures. Our motivation comes from not only how common this issue is, but also from experiencing it ourselves. By tackling this problem, we aim to create a solution that improves campus life for students and faculty.
+The team chose to tackle this issue because it is a recurring problem that affects both students and faculty, often leading to negative consequences. These include wasted time and the need to park in illegal spaces-- resulting in the risk of recieving overpriced parking tickets. This challenge also extends beyond on-campus parking and includes many public parking strutures. Our motivation comes from not only how common this issue is, but also from experiencing it ourselves. By tackling this problem, we aim to create a solution that **improves campus life for students and faculty**.
 
 
 <img src="source/problem/ParkingTicket.jpg" alt="Image of parking ticket" width="75%" height="auto">
@@ -61,7 +61,7 @@ Currently, to know where they should park, students have a few options:
 
 
 #### <u>Data Collection</u> :
-Additionally, parking sensors have already been implemented, however they may not always function as intended. Specifically, the number of available spots displayed does not accurately reflect the actual availability on each parking level. In some cases, the system shows a green light indicating an open space, even when the spot is already occupied. Ensuring the sensors operate as designed would greatly improve parking accuracy and reduce confusion for drivers.
+Additionally, parking sensors have already been implemented, however they may not always function as intended. Specifically, the number of available spots displayed does not accurately reflect the actual availability on each parking level. _In some cases, the system shows a green light indicating an open space, even when the spot is already occupied._ Ensuring the sensors operate as designed would greatly improve parking accuracy and reduce confusion for drivers.
 
 
 <img src="source/problem/ucsd_err1.jpg" alt="Image of incorrect sensor UCSD- 1" width="50%" height="auto">
