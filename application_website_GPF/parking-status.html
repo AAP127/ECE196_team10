@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Spot Status – Gotta Park Fast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+      color: #002855;
+      padding-bottom: 3rem;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 2rem 1rem 0.5rem;
+      font-size: 2.2rem;
+      color: #002855;
+    }
+
+    .zone {
+      margin: 2rem auto;
+      text-align: center;
+      max-width: 500px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+    }
+
+    .zone-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #00558C;
+    }
+
+    .spot-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .spot {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    .green {
+      background-color: #2ecc71;
+    }
+
+    .red {
+      background-color: #e74c3c;
+    }
+
+    .ucsd-button {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.9rem;
+      background-color: #0072CE;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .ucsd-button:hover {
+      background-color: #005ea2;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 4rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚗 Parking Spot Status</h1>
+
+  <!-- Zone A -->
+  <div class="zone">
+    <div class="zone-title">Zone A</div>
+    <div class="spot-container">
+      <div id="spotA" class="spot green">A</div>
+      <button class="ucsd-button" onclick="toggleSpot('spotA')">Change Status</button>
+    </div>
+  </div>
+
+  <!-- Zone B -->
+  <div class="zone">
+    <div class="zone-title">Zone B</div>
+    <div class="spot-container">
+      <div id="spotB" class="spot red">B</div>
+      <button class="ucsd-button" onclick="toggleSpot('spotB')">Change Status</button>
+    </div>
+  </div>
+
+  <!-- Zone C -->
+  <div class="zone">
+    <div class="zone-title">Zone C</div>
+    <div class="spot-container">
+      <div id="spotC" class="spot green">C</div>
+      <button class="ucsd-button" onclick="toggleSpot('spotC')">Change Status</button>
+    </div>
+  </div>
+
+  <!-- Zone S -->
+  <div class="zone">
+    <div class="zone-title">Zone S (Student)</div>
+    <div class="spot-container">
+      <div id="spotS" class="spot green">S</div>
+      <button class="ucsd-button" onclick="toggleSpot('spotS')">Change Status</button>
+    </div>
+  </div>
+
+  <!-- Zone V -->
+  <div class="zone">
+    <div class="zone-title">Zone V (Visitor)</div>
+    <div class="spot-container">
+      <div id="spotV" class="spot red">V</div>
+      <button class="ucsd-button" onclick="toggleSpot('spotV')">Change Status</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 UC San Diego • ECE 196 – Gotta Park Fast
+  </footer>
+
+  <script>
+    function toggleSpot(spotId) {
+      const spot = document.getElementById(spotId);
+      if (spot.classList.contains("green")) {
+        spot.classList.remove("green");
+        spot.classList.add("red");
+      } else {
+        spot.classList.remove("red");
+        spot.classList.add("green");
+      }
+    }
+  </script>
+
+</body>
+</html>
