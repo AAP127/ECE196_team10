@@ -27,18 +27,31 @@ We have created a 4 layer PCB board to support our smart parking indicator syste
 - **Power and ground** are routed from the ESP32 through the board to supply all components. 
  
 
-## Diagrams/ Images
+## Board Development
 
-### Wiring Schematic
+### 1. Wiring Schematic
 ![Wiring_Schematic](source/pcb/ECE196PCBSchem.jpg)
 
 
 
-### PCB Schematic and Diagram
+### 2. PCB Schematic and Diagram
 
-![PCB_Diagram](source/pcb/ECE196PCBschem2.jpg)
-![PCB_Model](source/pcb/pcb_model.JPG)
+![PCB Diagram](source/pcb/ECE196PCBschem2.jpg)
+![PCB Model](source/pcb/pcb_model.JPG)
 
 
-### Physical Board
+### 3. Physical Board
 ![PCB Board](source/pcb/pcb_physical.jpg)
+
+
+### 4. Assembled Board
+![Fully Assembled PCB](source/pcb/pcb_assembled.jpg)---> Annotate this
+
+
+## Design Challenges/ Pivots
+
+Our board initially was designed to run the ultrasonic sensors off of 3.3V supply voltage (as opposed to 5V), as our ESP-32 would then be able to accept the signals.
+
+After our board was finalized and ordered, our team determined that our ultrasonic sensors, despite advertising and the datasheet, did not function correctly when supplied with 3.3V input. Due to this, we had to pivot our design to include a logic level shifter. This allows the ESP-32, which uses 3.3V to represent a HIGH signal, to communicate with the sensor, which uses 5V for its signals.
+
+As seen in the image above, the setup requires additional wiring for the signals, alognside the reference voltages for the logic level shifter.

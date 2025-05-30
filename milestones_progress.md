@@ -19,6 +19,9 @@ This page contains our milestones and project progress. Additionally, the progre
 ## Project Updates
 
 
+#### Week 8
+- 
+
 
 #### Week 7
 - We created our device algorithm to mark a spot as detected. At a high level, it cosists of using an average of detections over the last second to smooth out any extraneous values the sensor may pick up.
