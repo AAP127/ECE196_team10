@@ -19,8 +19,17 @@ This page contains our milestones and project progress. Additionally, the progre
 ## Project Updates
 
 
+
+
+
+
 #### Week 8
-- 
+- While we did not finish out enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
+- We tested bluetooth communication, and were able to use multiple ESP's in order to update a test webpage.
+
+<img src="source/milestones_updates/bluetooth_comms.JPG" alt="Image of algorithm operation" width="60%" height="auto">
+
+<small>*Example of two sensors simultaneously sending data to a website with near-realtime updates (around every 3 seconds).</small>
 
 
 #### Week 7
