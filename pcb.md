@@ -44,7 +44,7 @@ We have created a 4 layer PCB board to support our smart parking indicator syste
 
 
 ### 4. Assembled Board
-<img src="source/pcb/pcb_assembled.jpg" alt="Fully Assembled PCB" width="100%" height="auto">
+<img src="source/pcb/pcb_assembled2.jpg" alt="Fully Assembled PCB" width="100%" height="auto">
 
 
 
