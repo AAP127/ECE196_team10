@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Parking Spot Status – Gotta Park Fast</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <li><a href="ble-sensors.html" target="_blank">BLE Sensors</a></li>
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -19,6 +20,14 @@
       padding: 2rem 1rem 0.5rem;
       font-size: 2.2rem;
       color: #002855;
+    }
+
+    p.note {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+      font-style: italic;
+      font-size: 0.95rem;
     }
 
     .zone {
@@ -36,6 +45,12 @@
       font-weight: 700;
       margin-bottom: 1.5rem;
       color: #00558C;
+    }
+
+    .sensor-label {
+      font-size: 0.85rem;
+      color: gray;
+      font-weight: normal;
     }
 
     .spot-container {
@@ -81,6 +96,12 @@
       background-color: #005ea2;
     }
 
+    .ucsd-button:disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -92,28 +113,29 @@
 <body>
 
   <h1>🚗 Parking Spot Status</h1>
+  <p class="note">(Zones A & B update live from sensors. Others are manual.)</p>
 
   <!-- Zone A -->
   <div class="zone">
-    <div class="zone-title">Zone A</div>
+    <div class="zone-title">Zone A <span class="sensor-label">(Sensor 1)</span></div>
     <div class="spot-container">
       <div id="spotA" class="spot green">A</div>
-      <button class="ucsd-button" onclick="toggleSpot('spotA')">Change Status</button>
+      <button class="ucsd-button" disabled>Live Update</button>
     </div>
   </div>
 
   <!-- Zone B -->
   <div class="zone">
-    <div class="zone-title">Zone B</div>
+    <div class="zone-title">Zone B <span class="sensor-label">(Sensor 2)</span></div>
     <div class="spot-container">
       <div id="spotB" class="spot red">B</div>
-      <button class="ucsd-button" onclick="toggleSpot('spotB')">Change Status</button>
+      <button class="ucsd-button" disabled>Live Update</button>
     </div>
   </div>
 
   <!-- Zone C -->
   <div class="zone">
-    <div class="zone-title">Zone C</div>
+    <div class="zone-title">Zone C <span class="sensor-label">(Future Sensor)</span></div>
     <div class="spot-container">
       <div id="spotC" class="spot green">C</div>
       <button class="ucsd-button" onclick="toggleSpot('spotC')">Change Status</button>
@@ -122,7 +144,7 @@
 
   <!-- Zone S -->
   <div class="zone">
-    <div class="zone-title">Zone S (Student)</div>
+    <div class="zone-title">Zone S (Student) <span class="sensor-label">(Future Sensor)</span></div>
     <div class="spot-container">
       <div id="spotS" class="spot green">S</div>
       <button class="ucsd-button" onclick="toggleSpot('spotS')">Change Status</button>
@@ -131,7 +153,7 @@
 
   <!-- Zone V -->
   <div class="zone">
-    <div class="zone-title">Zone V (Visitor)</div>
+    <div class="zone-title">Zone V (Visitor) <span class="sensor-label">(Future Sensor)</span></div>
     <div class="spot-container">
       <div id="spotV" class="spot red">V</div>
       <button class="ucsd-button" onclick="toggleSpot('spotV')">Change Status</button>
@@ -153,6 +175,20 @@
         spot.classList.add("green");
       }
     }
+
+    // Auto-fetch for A and B every 2 seconds
+    async function fetchStatus() {
+      try {
+        const res = await fetch("status.json");
+        const data = await res.json();
+
+        document.getElementById("spotA").className = "spot " + (data.A === "OCCUPIED" ? "red" : "green");
+        document.getElementById("spotB").className = "spot " + (data.B === "OCCUPIED" ? "red" : "green");
+      } catch (err) {
+        console.error("Error reading status.json", err);
+      }
+    }
+    setInterval(fetchStatus, 2000);
   </script>
 
 </body>

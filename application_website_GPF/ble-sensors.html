@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLE Sensor Parking Dashboard – UCSD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f4f8;
+      color: #002855;
+    }
+    nav {
+      background-color: #0A1128;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+    .zone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .zone-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .zone-card h2 {
+      color: #00558C;
+      font-size: 1.8rem;
+    }
+    .count {
+      font-size: 1.5rem;
+      margin: 0.8rem 0;
+    }
+    .status {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #d13a30;
+    }
+    #connectAHidden {
+      display: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>🚗 BLE Sensor Parking Dashboard – UCSD</h1>
+    <p>Live spot monitoring via Bluetooth Low Energy (BLE)</p>
+  </nav>
+
+  <div class="zone-grid" id="zoneGrid">
+    <!-- Parking Cards -->
+    <div class="zone-card" id="zone-A">
+      <h2>A</h2>
+      <p><strong>Hopkins Parking Structure</strong></p>
+      <p class="count">Available Spots: <span id="count-A">100</span> / 100</p>
+      <p class="status" id="status-A">Sensor: Not Connected</p>
+    </div>
+    <div class="zone-card" id="zone-B">
+      <h2>B</h2>
+      <p><strong>Hopkins Parking Structure</strong></p>
+      <p class="count">Available Spots: <span id="count-B">75</span> / 75</p>
+      <p class="status" id="status-B">Sensor: Not Connected</p>
+    </div>
+    <div class="zone-card" id="zone-C">
+      <h2>C</h2>
+      <p><strong>Hopkins Parking Structure</strong></p>
+      <p class="count">Available Spots: <span id="count-C">50</span> / 50</p>
+      <p class="status" id="status-C">Sensor: Not Connected</p>
+    </div>
+    <div class="zone-card" id="zone-S">
+      <h2>S</h2>
+      <p><strong>Hopkins Parking Structure</strong></p>
+      <p class="count">Available Spots: <span id="count-S">150</span> / 150</p>
+      <p class="status" id="status-S">Sensor: Not Connected</p>
+    </div>
+    <div class="zone-card" id="zone-V">
+      <h2>V</h2>
+      <p><strong>Hopkins Parking Structure</strong></p>
+      <p class="count">Available Spots: <span id="count-V">25</span> / 25</p>
+      <p class="status" id="status-V">Sensor: Not Connected</p>
+    </div>
+  </div>
+
+  <!-- Hidden button for BLE -->
+  <button id="connectAHidden" onclick="connectSensorA()">Connect Zone A Sensor</button>
+
+  <footer>
+    &copy; 2025 UC San Diego • ECE 196 – Gotta Park Fast
+  </footer>
+
+  <script>
+    let spotCounts = {
+      A: 100,
+      B: 75,
+      C: 50,
+      S: 150,
+      V: 25,
+    };
+
+    document.addEventListener('keydown', function (event) {
+      if (event.shiftKey && event.key === 'A') {
+        document.getElementById('connectAHidden').click();
+      }
+    });
+
+    function connectSensorA() {
+      navigator.bluetooth.requestDevice({
+        filters: [{ namePrefix: 'ESP32-Sensor' }],
+        optionalServices: ['19b10000-e8f2-537e-4f6c-d104768a1214']
+      })
+      .then(device => {
+        document.getElementById('status-A').textContent = `Connected to ${device.name}`;
+        document.getElementById('status-A').style.color = "#24af37";
+        return device.gatt.connect();
+      })
+      .then(server => {
+        return server.getPrimaryService('19b10000-e8f2-537e-4f6c-d104768a1214');
+      })
+      .then(service => {
+        return service.getCharacteristic('19b10001-e8f2-537e-4f6c-d104768a1214');
+      })
+      .then(characteristic => {
+        characteristic.startNotifications();
+        characteristic.addEventListener('characteristicvaluechanged', (event) => {
+          const value = new TextDecoder().decode(event.target.value).trim();
+          if (value === "OCCUPIED") {
+            if (spotCounts.A > 0) spotCounts.A--;
+            document.getElementById("count-A").textContent = spotCounts.A;
+          }
+        });
+      })
+      .catch(error => {
+        console.error("BLE Error:", error);
+        alert("Could not connect to BLE sensor.");
+      });
+    }
+  </script>
+</body>
+</html>
