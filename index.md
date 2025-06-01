@@ -1,3 +1,13 @@
+<style>
+  body {
+    background-color: #f4f6fa;
+    color: #00274C;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    color: #00629B;
+  }
+</style>
 <nav style="background-color: white; padding: 1em;"> 
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
