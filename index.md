@@ -24,6 +24,7 @@
   }
 </style>
 <!-- end custom styles -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <nav style="background-color: white; padding: 1em;"> 
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
