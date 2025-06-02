@@ -1,3 +1,46 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color:rgb(168, 225, 242);
+    color:rgb(99, 4, 99);
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    background-color: #FFD100;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  nav a {
+    color: #00274C;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .content {
+    background-color: white;
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 960px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  img {
+    border-radius: 8px;
+    margin: 1em 0;
+  }
+</style>
+
 <nav style="background-color: white; padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
