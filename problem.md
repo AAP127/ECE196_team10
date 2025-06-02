@@ -2,22 +2,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
+<<<<<<< HEAD
     background-color:rgb(200, 247, 253);
     color:rgb(0, 0, 0);
+=======
+    background-color:rgb(213,237,223);
+    color: rgb(213, 237, 223);
+>>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
 
   nav {
+<<<<<<< HEAD
     background-color:rgb(205, 0, 0);
+=======
+>>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
     padding: 1em;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   nav a {
+<<<<<<< HEAD
     color:rgb(0, 24, 47);
+=======
+>>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
     margin: 0 15px;
     font-weight: bold;
     text-decoration: none;
@@ -42,15 +53,23 @@
   }
 </style>
 
-<nav>
-  <a href="/ECE196_team10/">Home</a>
-  <a href="/ECE196_team10/problem">The Problem</a>
-  <a href="/ECE196_team10/solution">Our Solution</a>
-  <a href="/ECE196_team10/milestones_progress">Milestones and Progress</a>
-  <a href="/ECE196_team10/pcb">Our PCB</a>
-  <a href="/ECE196_team10/team">About Us</a>
+<nav style="background-color:rgb(213, 237, 223); padding: 1em;">
+  <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
+  <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
+  <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
+  <a href="/ECE196_team10/milestones_progress" style="color:#000; margin-right: 15px; text-decoration: underline;"> Milestones and Progress </a>
+  <a href="/ECE196_team10/pcb" style="color:#000;margin-right: 15px;  text-decoration: underline;">Our PCB</a>
+  <a href="/ECE196_team10/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
+  <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
 </nav>
 
+<<<<<<< HEAD
+=======
+
+
+# Our Focus
+
+>>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
 ## The Problem
 
 As a student, it can be difficult to find parking for classes, especially during congested times of the day. This is especially true for students using campus parking structures. **Knowing how many spots are available gives better context for a student to understand where they might want to park, or if they should come to campus at all.**
@@ -106,4 +125,4 @@ Existing parking sensors are installed, but often unreliable:
 <img src="source/problem/ucsd_err1.jpg" alt="Faulty sensor reading 1" width="50%">
 <img src="source/problem/ucsd_err2.jpg" alt="Faulty sensor reading 2" width="50%">
 
-</div>
+
