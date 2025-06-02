@@ -94,8 +94,8 @@ We have created a 4 layer PCB board to support our smart parking indicator syste
 
 ## Design Challenges/ Pivots
 
-Our board initially was designed to run the ultrasonic sensors off of 3.3V supply voltage (as opposed to 5V), as our ESP-32 would then be able to accept the signals.
+Our board initially was designed to run the ultrasonic sensors off of <strong>3.3V supply voltage</strong> (as opposed to 5V), as our ESP-32 would then be able to accept the signals.
 
-After our board was finalized and ordered, our team determined that our ultrasonic sensors, despite advertising and the datasheet, did not function correctly when supplied with 3.3V input. Due to this, we had to pivot our design to include a logic level shifter. This allows the ESP-32, which uses 3.3V to represent a HIGH signal, to communicate with the sensor, which uses 5V for its signals.
+After our board was finalized and ordered, our team determined that our ultrasonic sensors, despite advertising and the datasheet, <strong>did not function correctly when supplied with 3.3V input</strong>. Due to this, we had to pivot our design to include a <strong>logic level shifter</strong>. This allows the ESP-32, which uses 3.3V to represent a HIGH signal, to communicate with the sensor, which uses 5V for its signals.
 
 As seen in the image above, the setup uses additional wiring for the signals and reference voltages for the logic level shifter. This allows us to recieve the send and recieve the correct signals which the ESP-32 is able to use.
