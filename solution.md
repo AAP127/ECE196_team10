@@ -75,7 +75,7 @@ We propose a website which displays the current availability of parking spots wi
 
 
 ## Technology Block Diagram
-![Hardware Block Diagram](source/solution/tech_diagram_2.png)
+![Hardware Block Diagram](source/solution/block_diagram2.png)
 
 
 
