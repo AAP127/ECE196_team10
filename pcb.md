@@ -1,8 +1,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color:rgb(192, 210, 245);
-    color:rgb(107, 4, 4);
+    background-color:rgb(224, 232, 249);
+    color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
