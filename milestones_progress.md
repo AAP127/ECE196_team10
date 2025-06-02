@@ -56,7 +56,7 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 ## Milestones
-![Milestone Timeline Image](source/milestones_updates/milestones.png)
+![Milestone Timeline Image](source/milestones_updates/new_milestones.jpg)
 
 
 
