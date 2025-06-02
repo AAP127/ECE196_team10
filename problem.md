@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color:rgb(193, 237, 213);
+    background-color:rgb(223, 248, 234);
     color:rgb(1, 21, 39);
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -48,10 +48,6 @@
   <a href="/ECE196_team10/pcb" style="color:#000;margin-right: 15px;  text-decoration: underline;">Our PCB</a>
   <a href="/ECE196_team10/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
 </nav>
-# Our Focus
-
-
-
 
 ## The Problem:
 

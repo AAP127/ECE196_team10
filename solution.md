@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color:rgb(237, 230, 250);
+    background-color:rgb(243, 240, 250);
     color:rgb(12, 39, 65);
     font-family: 'Roboto', sans-serif;
     margin: 0;
