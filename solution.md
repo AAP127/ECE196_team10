@@ -66,7 +66,7 @@
 Currently, we have identified two key concerns with the current student parking experience on campus: **Information Distribution** and **Data Collection**
 
 #### Information Distribution
-We propose a website which displays the current availability of parking spots with **realtime or near-real** time update frequency. This information can be accessed from any device with internet access via the website. This helps solve the problem of data distribution for students and faculty by providing a centralized, **easily accessible** platform for up-to-date parking availability. Instead of physically checking lots and using unreliable historical data.
+We propose a website which displays the current availability of parking spots with **realtime or near-real** time update frequency. This information can be accessed from any device with internet access via the website. This helps solve the problem of data distribution for students and faculty by providing a centralized, **easily accessible** platform for up-to-date parking availability. This would be an alternative to physically checking lots and using unreliable historical data.
 
 
 #### Data Collection
