@@ -74,24 +74,28 @@
       <h2>A</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-A">100</span> / 100</p>
+      <p class="gray-label">Last update: <span id="timestamp-hopkins-A"></span></p>
     </div>
 
     <div class="zone-card" id="zone-B">
       <h2>B</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-B">75</span> / 75</p>
+      <p class="gray-label">Last update: <span id="timestamp-hopkins-B"></span></p>
     </div>
 
     <div class="zone-card" id="zone-S">
       <h2>S</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-S">150</span> / 150</p>
+      <p class="gray-label">Last update: <span id="timestamp-hopkins-S"></span></p>
     </div>
 
     <div class="zone-card" id="zone-V">
       <h2>V</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-V">25</span> / 25</p>
+      <p class="gray-label">Last update: <span id="timestamp-hopkins-V"></span></p>
     </div>
   </div>
 
@@ -106,6 +110,10 @@
     const num_B_spots = document.getElementById("count-B");
     const num_S_spots = document.getElementById("count-S");
     const num_V_spots = document.getElementById("count-V");
+    const hopkins_last_updated_A = document.getElementById("timestamp-hopkins-A");
+    const hopkins_last_updated_B = document.getElementById("timestamp-hopkins-B");
+    const hopkins_last_updated_S = document.getElementById("timestamp-hopkins-S");
+    const hopkins_last_updated_V = document.getElementById("timestamp-hopkins-V");
 
 
   const firebaseConfig = {
@@ -133,60 +141,33 @@
       num_B_spots.innerHTML = data.B;
       num_S_spots.innerHTML = data.S;
       num_V_spots.innerHTML = data.V;
-
-      // document.getElementById("statusDisplay").innerHTML = `
-      //   Connected: ${data.connected} <br>
-      //   Last Update: ${data.lastUpdate} <br>
-      //   Battery: ${data.battery}%
-      // `;
+      timestamp = getDateTime();
+      hopkins_last_updated_A.innerHTML = timestamp;
+      hopkins_last_updated_B.innerHTML = timestamp;
+      hopkins_last_updated_S.innerHTML = timestamp;
+      hopkins_last_updated_V.innerHTML = timestamp;
     }
-  });
+    }
+  );
 
-    // let spotCounts = {
-    //   A: 100,
-    //   B: 75,
-    //   C: 50,
-    //   S: 150,
-    //   V: 25,
-    // };
 
-    // document.addEventListener('keydown', function (event) {
-    //   if (event.shiftKey && event.key === 'A') {
-    //     document.getElementById('connectAHidden').click();
-    //   }
-    // });
 
-    // function connectSensorA() {
-    //   navigator.bluetooth.requestDevice({
-    //     filters: [{ namePrefix: 'ESP32-Sensor' }],
-    //     optionalServices: ['19b10000-e8f2-537e-4f6c-d104768a1214']
-    //   })
-    //   .then(device => {
-    //     document.getElementById('status-A').textContent = `Connected to ${device.name}`;
-    //     document.getElementById('status-A').style.color = "#24af37";
-    //     return device.gatt.connect();
-    //   })
-    //   .then(server => {
-    //     return server.getPrimaryService('19b10000-e8f2-537e-4f6c-d104768a1214');
-    //   })
-    //   .then(service => {
-    //     return service.getCharacteristic('19b10001-e8f2-537e-4f6c-d104768a1214');
-    //   })
-    //   .then(characteristic => {
-    //     characteristic.startNotifications();
-    //     characteristic.addEventListener('characteristicvaluechanged', (event) => {
-    //       const value = new TextDecoder().decode(event.target.value).trim();
-    //       if (value === "OCCUPIED") {
-    //         if (spotCounts.A > 0) spotCounts.A--;
-    //         document.getElementById("count-A").textContent = spotCounts.A;
-    //       }
-    //     });
-    //   })
-    //   .catch(error => {
-    //     console.error("BLE Error:", error);
-    //     alert("Could not connect to BLE sensor.");
-    //   });
-    // }
+
+  function getDateTime() {
+        var currentdate = new Date();
+        var day = ("00" + currentdate.getDate()).slice(-2); // Convert day to string and slice
+        var month = ("00" + (currentdate.getMonth() + 1)).slice(-2);
+        var year = currentdate.getFullYear();
+        var hours = ("00" + currentdate.getHours()).slice(-2);
+        var minutes = ("00" + currentdate.getMinutes()).slice(-2);
+        var seconds = ("00" + currentdate.getSeconds()).slice(-2);
+
+        var datetime = month + "/" + day + "/" + year + " at " + hours + ":" + minutes + ":" + seconds;
+        return datetime;
+    }
+
+
+
   </script>
 </body>
 </html>

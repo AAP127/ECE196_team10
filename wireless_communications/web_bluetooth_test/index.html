@@ -174,7 +174,7 @@
         timestampContainer: document.getElementById('timestamp-sensor2'),
         spot_type: null,
         avg_dist: null,
-        available: 0
+        available: 1
     }
     
     let sensors = [sensor1,sensor2];
@@ -366,7 +366,7 @@
         var minutes = ("00" + currentdate.getMinutes()).slice(-2);
         var seconds = ("00" + currentdate.getSeconds()).slice(-2);
 
-        var datetime = day + "/" + month + "/" + year + " at " + hours + ":" + minutes + ":" + seconds;
+        var datetime = dmonth + "/" + day + "/" + year + " at " + hours + ":" + minutes + ":" + seconds;
         return datetime;
     }
 
