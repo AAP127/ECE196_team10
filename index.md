@@ -70,7 +70,7 @@ Parking on campus at UCSD can be quite challenging during busy times, and studen
 
 
 
-<img src="source/index/ece_logo.jpg" alt="ECE Depatment Logo" width="50%">
+<img src="source/index/ECE_dept_logo.png" alt="ECE Depatment Logo" width="50%">
 
 ![Geisel Library](source/index/geisel.jpg)
 
