@@ -42,13 +42,14 @@
   }
 </style>
 
-<nav>
-  <a href="/ECE196_team10/">Home</a>
-  <a href="/ECE196_team10/problem">The Problem</a>
-  <a href="/ECE196_team10/solution">Our Solution</a>
-  <a href="/ECE196_team10/milestones_progress">Milestones and Progress</a>
-  <a href="/ECE196_team10/pcb">Our PCB</a>
-  <a href="/ECE196_team10/team">About Us</a>
+<nav style="background-color: #FFD100; padding: 1em;">
+  <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
+  <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
+  <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
+  <a href="/ECE196_team10/milestones_progress" style="color:#000; margin-right: 15px; text-decoration: underline;"> Milestones and Progress </a>
+  <a href="/ECE196_team10/pcb" style="color:#000;margin-right: 15px;  text-decoration: underline;">Our PCB</a>
+  <a href="/ECE196_team10/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
+  <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
 </nav>
 
 <div class="content">
