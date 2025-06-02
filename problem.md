@@ -3,7 +3,7 @@
 
 <style>
   body {
-    background-color:rgb(190, 243, 217);
+    background-color:rgb(245, 225, 225);
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -50,7 +50,7 @@
 </style>
 
 
-<nav style="background-color:rgb(190, 243, 217); padding: 1em;">
+<nav style="background-color:rgb(245, 225, 225); padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>

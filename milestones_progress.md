@@ -65,10 +65,10 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 9
-- Successfully printed enclosure for device
-- Assembled first prototype PCB
-- Implemented Firebase DB in between computer server and webfront
-- Real-time parking data transfer from the device to the website via Bluetooth has not yet been achieved 
+- We successfully printed an enclosure for our device
+- We assembled first prototype PCB, making wiring additions for the logic level shifter as needed.
+- We implemented a Firebase DB in between the computer server and webfront for real time data updates and distribution.
+- Real-time parking data transfer from the device to the website via Bluetooth is still being finalized.
 
 
 <img src="source/pcb/PCB_Enclosure.jpg" alt="Image of algorithm operation" width="50%" height="auto">

@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color:rgb(243, 240, 250);
+    background-color:rgb(205, 243, 225);
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -47,7 +47,7 @@
   }
 </style>
 
-<nav style="background-color: rgb(243, 240, 250); padding: 1em;">
+<nav style="background-color: rgb(205, 243, 225); padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
@@ -79,17 +79,4 @@ Students are currently limited to basing their knowledge of current parking on t
 ![Hardware Block Diagram](source/solution/tech_diagram_2.png)
 
 
-## Technology Highlights
-\* Key technological usage in the project includes:
-- Proximity sensor/ wiring
-- Microcontroller 
-  - Wiring
-  - Programming to interpret sensor data
-  - Programming to communicate with computer server
-- Program design
-  - Code to interpret microcontroller communication
-  - Code to update website
-- Website
-  - Webfront
-  - Database to pull parking data from
 

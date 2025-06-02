@@ -63,9 +63,17 @@
 
 # ECE 196 Spring 25 Team 10: Improving the Student Parking Experience
 
-Welcome to our team's website! We are interested in improving the UCSD student experience of parking for class on campus. For more information about this project, please refer to the links above.Also Our project helps UCSD students find parking more easily by combining ultrasonic sensors with Bluetooth communication to detect spot occupancy in real time. Data is sent to a live dashboard that shows current parking availability, making campus commuting more efficient.
+Welcome to our team's website! We are interested in improving the UCSD student experience of parking for class on campus. For more information about this project, please refer to the links above. 
 
-![UCSDLogo_JSOE_BlueGold_Print](source/index/UCSDLogo_JSOE_BlueGold_Print.jpg)
+
+Parking on campus at UCSD can be quite challenging during busy times, and students may struggle in deciding whether to drive to campus, or arrive another way. Using ultrasonic sensors to detect parking occupancy, and wirelessly sending this information to a live webpage, our project aims to help students be more informed about the current parking situation on campus, making commuting more efficient and less stressful.
+
+
+
+<img src="source/index/ece_logo.jpg" alt="ECE Depatment Logo" width="50%">
+
 ![Geisel Library](source/index/geisel.jpg)
+
+
 ![South Parking Structure](source/index/south.jpg)
 
