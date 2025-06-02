@@ -104,7 +104,7 @@ This page contains our milestones and project progress. Additionally, the progre
 
 <img src="source/milestones_updates/week5_serial.JPG" alt="Image of serial monitor" width="40%" height="auto">
 
-<img src="source/milestones_updates/basic_setup.jpg" alt="Image of sensor setup" width="50%" height="auto">
+<img src="source/milestones_updates/basic_setup.JPG" alt="Image of sensor setup" width="50%" height="auto">
 
 
 ## Final Presentation Updates
