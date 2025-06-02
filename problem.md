@@ -3,21 +3,19 @@
 <style>
   body {
     background-color:rgb(200, 247, 253);
-    color: #00274C;
+    color: rgb(213, 237, 223);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
 
   nav {
-    background-color: #FFD100;
     padding: 1em;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   nav a {
-    color: #00274C;
     margin: 0 15px;
     font-weight: bold;
     text-decoration: none;
@@ -42,7 +40,7 @@
   }
 </style>
 
-<nav style="background-color: #FFD100; padding: 1em;">
+<nav style="background-color:rgb(213, 237, 223); padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
@@ -52,7 +50,7 @@
   <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
 </nav>
 
-<div class="content">
+
 
 # Our Focus
 
@@ -105,4 +103,4 @@ Existing parking sensors are installed, but often unreliable:
 <img src="source/problem/ucsd_err1.jpg" alt="Faulty sensor reading 1" width="50%">
 <img src="source/problem/ucsd_err2.jpg" alt="Faulty sensor reading 2" width="50%">
 
-</div>
+
