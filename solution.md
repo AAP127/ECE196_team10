@@ -66,12 +66,11 @@
 Currently, we have identified two key concerns with the current student experience of parking on campus: **Information Distribution** and **Data Collection**
 
 #### Information Distribution
-Students are currently limited to basing their knowledge of current parking on the historical data from the first two weeks of the quarter. <u> We propose a website which displays the current availability of parking spots with realtime or near-relatime update frequency </u>. This information can be viewed from anywhere and doesn't require the usage of a phone, improving accessibility and student planning ability.
-
+We propose a website which displays the current availability of parking spots with realtime or near-real time update frequency. This information can be accessed from any device with internet access via the website. This helps solve the problem of data distribution for students and faculty by providing a centralized, easily accessible platform for up-to-date parking availability. Instead of physically checking lots and using unreliable historical data.
 
 
 #### Data Collection
-<u>To more reliably collect information for the website, we propose the deployment of per-parking-spot occupancy detection devices.</u> These consist of a microcontroller and ultrasonic sensor, which are connected and indicate status via our team's PCB. The device will detect if a vehicle is present and communicate this is a computer or other server device which updates the website for students to view. For students actively inside the parking structure, indicator lights are also present, showing if a spot is occupied and what type of spot it is.
+<u> Instead we can write: We propose the deployment of per-parking-spot occupancy detection devices. These consist of a microcontroller and ultrasonic sensor, which are connected and indicate status via our team's PCB. The device will detect if a vehicle is present and communicate this information with a computer or other server device which updates the website for students to view. For students physically present inside the parking structure, indicator lights are also present, showing if a spot is occupied what type of spot it is. This helps solve the problem of data collection by automating the process of detecting and reporting parking spot availability. We are hopeful it is better than traditional parking detection methods that rely on outdated systems which don't provide real-time or spot specific data.
 
 
 
