@@ -65,10 +65,12 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 9
-- Successfully printed enclosure for devide
+- Successfully printed enclosure for device
+- Assembled first prototype PCB
+- Implemented Firebase DB in between computer server and webfront
 
 
-![DEvice Enslosure](source/pcb/PCB_Enclosure)
+![Device Enslosure](source/pcb/PCB_Enclosure)
 
 #### Week 8
 - While we did not finish out enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
