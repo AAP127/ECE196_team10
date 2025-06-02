@@ -74,38 +74,73 @@
       <h2>A</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-A">100</span> / 100</p>
-      <p class="status" id="status-A">Sensor: Not Connected</p>
     </div>
+
     <div class="zone-card" id="zone-B">
       <h2>B</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-B">75</span> / 75</p>
-      <p class="status" id="status-B">Sensor: Not Connected</p>
     </div>
+
     <div class="zone-card" id="zone-S">
       <h2>S</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-S">150</span> / 150</p>
-      <p class="status" id="status-S">Sensor: Not Connected</p>
     </div>
+
     <div class="zone-card" id="zone-V">
       <h2>V</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
       <p class="count">Available Spots: <span id="count-V">25</span> / 25</p>
-      <p class="status" id="status-V">Sensor: Not Connected</p>
     </div>
   </div>
 
   <!-- Hidden button for BLE -->
-  <button id="connectAHidden" onclick="connectSensorA()">Connect Zone A Sensor</button>
+  <!-- <button id="connectAHidden" onclick="connectSensorA()">Connect Zone A Sensor</button> -->
 
-  <footer>
-    &copy; 2025 UC San Diego • ECE 196 – Gotta Park Fast
-  </footer>
-
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script>
 
-    
+    const num_A_spots = document.getElementById("count-A");
+    const num_B_spots = document.getElementById("count-B");
+    const num_S_spots = document.getElementById("count-S");
+    const num_V_spots = document.getElementById("count-V");
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDgpIWiUTCc5mE-Oow_X46QqKGOoRkWpFE",
+    authDomain: "gotta-park-fast.firebaseapp.com",
+    databaseURL: "https://gotta-park-fast-default-rtdb.firebaseio.com",
+    projectId: "gotta-park-fast",
+    storageBucket: "gotta-park-fast.firebasestorage.app",
+    messagingSenderId: "172470306815",
+    appId: "1:172470306815:web:064c2da225268ec55789ca",
+    measurementId: "G-BMPMXZ0DY6"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+  const statusRef = database.ref('parking_spots');
+
+  statusRef.on('value', (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      console.log("Received update:", data);
+      // Update the webpage with the data
+
+      num_A_spots.innerHTML = data.A;
+      num_B_spots.innerHTML = data.B;
+      num_S_spots.innerHTML = data.S;
+      num_V_spots.innerHTML = data.V;
+
+      // document.getElementById("statusDisplay").innerHTML = `
+      //   Connected: ${data.connected} <br>
+      //   Last Update: ${data.lastUpdate} <br>
+      //   Battery: ${data.battery}%
+      // `;
+    }
+  });
 
     // let spotCounts = {
     //   A: 100,
@@ -155,3 +190,8 @@
   </script>
 </body>
 </html>
+
+
+<footer>
+  &copy; 2025 UC San Diego • ECE 196 – Gotta Park Fast
+</footer>
