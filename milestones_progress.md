@@ -68,6 +68,7 @@ This page contains our milestones and project progress. Additionally, the progre
 - Successfully printed enclosure for device
 - Assembled first prototype PCB
 - Implemented Firebase DB in between computer server and webfront
+- Real-time parking data transfer from the device to the website via Bluetooth has not yet been achieved 
 
 
 <img src="source/pcb/PCB_Enclosure.jpg" alt="Image of algorithm operation" width="50%" height="auto">
