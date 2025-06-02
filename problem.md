@@ -1,8 +1,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
-    background-color:rgb(213, 237, 223);
-    color:rgb(1, 21, 39);
+    background-color: rgb(213, 237, 223);
+    color: rgb(1, 21, 39);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -39,15 +39,19 @@
     border-radius: 8px;
     margin: 1em 0;
   }
-<nav style="background-color: white; padding: 1em;">
-  <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
-  <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
-  <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
-  <a href="/ECE196_team10/milestones_progress" style="color:#000; margin-right: 15px; text-decoration: underline;"> Milestones and Progress </a>
-  <a href="/ECE196_team10/pcb" style="color:#000;margin-right: 15px;  text-decoration: underline;">Our PCB</a>
-  <a href="/ECE196_team10/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
-  <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
+</style>
+
+<nav>
+  <a href="/ECE196_team10/">Home</a>
+  <a href="/ECE196_team10/problem">The Problem</a>
+  <a href="/ECE196_team10/solution">Our Solution</a>
+  <a href="/ECE196_team10/milestones_progress">Milestones and Progress</a>
+  <a href="/ECE196_team10/pcb">Our PCB</a>
+  <a href="/ECE196_team10/team">About Us</a>
+  <a href="/ECE196_team10/application_website_GPF/index.html">Our Application</a>
 </nav>
+
+<div class="content">
 
 ## The Problem:
 
