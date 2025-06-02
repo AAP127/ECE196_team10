@@ -61,13 +61,13 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 ## Project Updates
-
+Click [here](#week-5) or scroll down to read about our progress.
 
 
 #### Week 9
-- We successfully printed an enclosure for our device
+- We successfully printed an <strong>enclosure</strong> for our device
 - We assembled first prototype PCB, making wiring additions for the logic level shifter as needed.
-- We implemented a Google Firebase database in between the computer server and webfront for real time data updates and distribution.
+- We implemented a <strong>Google Firebase database</strong> in between the computer server and webfront for real time data updates and distribution. This involved assigning one offline webpage to be a <u>dashboard</u> to connect to the sensors and database, and the main page to <u>distribute</u> the information.
 - Real-time parking data transfer from the device to the website via Bluetooth is still being finalized.
 
 
@@ -77,8 +77,8 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 8
-- While we did not finish out enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
-- We tested bluetooth communication, and were able to use multiple ESP's in order to update a test webpage.
+- While we did not finish our enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
+- We tested bluetooth communication, and were able to use multiple ESP's in order to <u>update a test webpage</u>.
 
 <img src="source/milestones_updates/bluetooth_comms.JPG" alt="Image of algorithm operation" width="60%" height="auto">
 
@@ -86,8 +86,8 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 7
-- We created our device algorithm to mark a spot as detected. At a high level, it cosists of using an average of detections over the last second to smooth out any extraneous values the sensor may pick up.
-- We created an example python pipeline to read sensor values and display changes in parking data. Now that we have gotten the device's reported data into a language via serial, we are ready to attempt to expand to wireless communication.
+- We created our <strong>device algorithm</strong> to mark a spot as detected. At a high level, it cosists of using an average of detections over the last second to smooth out any extraneous values the sensor may pick up.
+- We created an <u>example python pipeline</u> to read sensor values and display changes in parking data. Now that we have gotten the device's reported data into a language via serial, we are ready to attempt to expand to wireless communication.
   
 <img src="source/milestones_updates/algorithm_example.JPG" alt="Image of algorithm operation" width="50%" height="auto">
 
@@ -96,9 +96,9 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 6
-- We spent time this week brainstorming how to modify our PCB, given the issues posed by the ultrasonic sensors not working with 3.3V. We ultimately decided to order logic level shifters to convert between 3.3V and 5V, ensuring that the HC-SR04 output is recieved as 3.3V level high. An image of this modified setup can be seen below; note that this setup is now able to use the ESP-32 vs an Arduino due to the level shifter.
+- We spent time this week brainstorming <u>how to modify our PCB</u>, given the issues posed by the ultrasonic sensors not working with 3.3V. We ultimately decided to order <strong>logic level shifters</strong> to convert between 3.3V and 5V, ensuring that the HC-SR04 output is recieved as 3.3V level high. An image of this modified setup can be seen below; note that this setup is now able to use the ESP-32 vs an Arduino due to the level shifter.
 - Challenges:
-  -  We ordered waterproof JSN-SR04 sensors which did not correctly report distance. We spent a large portion of time debugging this, ultimately setting our progress back. As such, and combined with the time spent brainstorming for our PCB, our milestone timeline was pushed back one week to accomodate for testing sensor detection later on.
+  -  We ordered waterproof JSN-SR04 sensors which did <u>not correctly report distance</u>. We spent a large portion of time debugging this, ultimately setting our progress back. As such, and combined with the time spent brainstorming for our PCB, our milestone timeline was pushed back one week to accomodate for testing sensor detection later on.
   
 <img src="source/milestones_updates/shifter_setup.jpg" alt="Image of sensor setup with logic shifter" width="50%" height="auto">
 
@@ -106,9 +106,9 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 5: 
-- We created our webfront which we can later add our parking availability metrics to for users. We also got the HC-SR04 ultrasonic sensors to communicate with the computer via serial monitor in Arduino IDE. Images of both can bee seen below.
+- We created our <strong>webfront</strong> which we can later add our parking availability metrics to for users. We also got the HC-SR04 ultrasonic sensors to communicate with the computer via <strong>serial monitor</strong> in Arduino IDE. Images of both can bee seen below.
 - Challenges: 
-  - We realized the HC-SR04 sensors, despite advertising the ability to work with 3.3V input voltage, were unreliable or just not working. This means we will need to modify our PCB to pull power from the 5V header of the ESP-32. 
+  - We realized the HC-SR04 sensors, despite advertising the ability to do so, were <u>unreliable or just not working when supplied with 3.3V input</u>. This means we will need to modify our PCB to pull power from the 5V header of the ESP-32. 
 
 <img src="source/milestones_updates/webfront.png" alt="Image of webfront" width="50%" height="auto">
 
