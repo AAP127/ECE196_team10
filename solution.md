@@ -70,7 +70,7 @@ We propose a website which displays the current availability of parking spots wi
 
 
 #### Data Collection
-<u> We propose the deployment of **per-parking-spot** occupancy detection devices. These consist of a microcontroller and ultrasonic sensor, which are connected and indicate status via our team's PCB. The device will detect if a vehicle is present and communicate this information with a **computer or other server device** which updates the website for students to view. For students physically present inside the parking structure, indicator lights are also present, showing if a spot is occupied what type of spot it is. This helps solve the problem of data collection by **automating** the process of detecting and reporting parking spot availability. We are hopeful it is better than traditional parking detection methods that rely on **outdated systems** which don't provide real-time or spot specific data.
+We propose the deployment of **per-parking-spot** occupancy detection devices. These consist of a microcontroller and ultrasonic sensor, which are connected and indicate status via our team's PCB. The device will detect if a vehicle is present and communicate this information with a **computer or other server device** which updates the website for students to view. For students physically present inside the parking structure, indicator lights are also present, showing if a spot is occupied what type of spot it is. This helps solve the problem of data collection by **automating** the process of detecting and reporting parking spot availability. We are hopeful it is better than traditional parking detection methods that rely on **outdated systems** which don't provide real-time or spot specific data.
 
 
 
