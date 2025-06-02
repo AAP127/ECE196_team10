@@ -80,14 +80,21 @@ This project is being developed as part of our ECE 196: Engineering Hands-on Gro
 [Click here](https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing)
 
 #### Mini Projects
-Aron: [Click here]()
+Aron: [Click here](https://github.com/ECE-196/docs/pull/29)
 
-Aatash: [Click here]()
+Aatash: [Click here](https://github.com/ECE-196/docs/pull/27)
 
-Fernando: [Click here]()
+Fernando: [Click here](https://github.com/ECE-196/docs/pull/28)
 
 #### Video
 _To be added_
 
 #### References
 
+[HC-SR04 Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf)
+
+[ESP-32 Bluetooth Tutorial](https://randomnerdtutorials.com/esp32-web-bluetooth/)
+
+[DigiKey Electrical Calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-led-series-resistor)
+
+[Google Firebase](https://console.firebase.google.com)
