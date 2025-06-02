@@ -1,57 +1,6 @@
 <!-- UCSD Theme Styling -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<style>
-  body {
-<<<<<<< HEAD
-    background-color:rgb(200, 247, 253);
-    color:rgb(0, 0, 0);
-=======
-    background-color:rgb(213,237,223);
-    color: rgb(213, 237, 223);
->>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
 
-  nav {
-<<<<<<< HEAD
-    background-color:rgb(205, 0, 0);
-=======
->>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
-    padding: 1em;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  nav a {
-<<<<<<< HEAD
-    color:rgb(0, 24, 47);
-=======
->>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
-    margin: 0 15px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  .content {
-    background-color: white;
-    margin: 2em auto;
-    padding: 2em;
-    max-width: 960px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
-
-  img {
-    border-radius: 8px;
-    margin: 1em 0;
-  }
-</style>
 
 <nav style="background-color:rgb(213, 237, 223); padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
@@ -63,13 +12,10 @@
   <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
 </nav>
 
-<<<<<<< HEAD
-=======
 
 
 # Our Focus
 
->>>>>>> b4d35bb7ee3d2b8ae2f90788169e4e3137ca00f0
 ## The Problem
 
 As a student, it can be difficult to find parking for classes, especially during congested times of the day. This is especially true for students using campus parking structures. **Knowing how many spots are available gives better context for a student to understand where they might want to park, or if they should come to campus at all.**
