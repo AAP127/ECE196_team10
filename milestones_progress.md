@@ -65,7 +65,10 @@ This page contains our milestones and project progress. Additionally, the progre
 
 
 #### Week 9
+- Successfully printed enclosure for devide
 
+
+![DEvice Enslosure](source/pcb/PCB_Enclosure)
 
 #### Week 8
 - While we did not finish out enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
