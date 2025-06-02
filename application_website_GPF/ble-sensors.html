@@ -82,12 +82,6 @@
       <p class="count">Available Spots: <span id="count-B">75</span> / 75</p>
       <p class="status" id="status-B">Sensor: Not Connected</p>
     </div>
-    <div class="zone-card" id="zone-C">
-      <h2>C</h2>
-      <p><strong>Hopkins Parking Structure</strong></p>
-      <p class="count">Available Spots: <span id="count-C">50</span> / 50</p>
-      <p class="status" id="status-C">Sensor: Not Connected</p>
-    </div>
     <div class="zone-card" id="zone-S">
       <h2>S</h2>
       <p><strong>Hopkins Parking Structure</strong></p>
@@ -110,51 +104,54 @@
   </footer>
 
   <script>
-    let spotCounts = {
-      A: 100,
-      B: 75,
-      C: 50,
-      S: 150,
-      V: 25,
-    };
 
-    document.addEventListener('keydown', function (event) {
-      if (event.shiftKey && event.key === 'A') {
-        document.getElementById('connectAHidden').click();
-      }
-    });
+    
 
-    function connectSensorA() {
-      navigator.bluetooth.requestDevice({
-        filters: [{ namePrefix: 'ESP32-Sensor' }],
-        optionalServices: ['19b10000-e8f2-537e-4f6c-d104768a1214']
-      })
-      .then(device => {
-        document.getElementById('status-A').textContent = `Connected to ${device.name}`;
-        document.getElementById('status-A').style.color = "#24af37";
-        return device.gatt.connect();
-      })
-      .then(server => {
-        return server.getPrimaryService('19b10000-e8f2-537e-4f6c-d104768a1214');
-      })
-      .then(service => {
-        return service.getCharacteristic('19b10001-e8f2-537e-4f6c-d104768a1214');
-      })
-      .then(characteristic => {
-        characteristic.startNotifications();
-        characteristic.addEventListener('characteristicvaluechanged', (event) => {
-          const value = new TextDecoder().decode(event.target.value).trim();
-          if (value === "OCCUPIED") {
-            if (spotCounts.A > 0) spotCounts.A--;
-            document.getElementById("count-A").textContent = spotCounts.A;
-          }
-        });
-      })
-      .catch(error => {
-        console.error("BLE Error:", error);
-        alert("Could not connect to BLE sensor.");
-      });
-    }
+    // let spotCounts = {
+    //   A: 100,
+    //   B: 75,
+    //   C: 50,
+    //   S: 150,
+    //   V: 25,
+    // };
+
+    // document.addEventListener('keydown', function (event) {
+    //   if (event.shiftKey && event.key === 'A') {
+    //     document.getElementById('connectAHidden').click();
+    //   }
+    // });
+
+    // function connectSensorA() {
+    //   navigator.bluetooth.requestDevice({
+    //     filters: [{ namePrefix: 'ESP32-Sensor' }],
+    //     optionalServices: ['19b10000-e8f2-537e-4f6c-d104768a1214']
+    //   })
+    //   .then(device => {
+    //     document.getElementById('status-A').textContent = `Connected to ${device.name}`;
+    //     document.getElementById('status-A').style.color = "#24af37";
+    //     return device.gatt.connect();
+    //   })
+    //   .then(server => {
+    //     return server.getPrimaryService('19b10000-e8f2-537e-4f6c-d104768a1214');
+    //   })
+    //   .then(service => {
+    //     return service.getCharacteristic('19b10001-e8f2-537e-4f6c-d104768a1214');
+    //   })
+    //   .then(characteristic => {
+    //     characteristic.startNotifications();
+    //     characteristic.addEventListener('characteristicvaluechanged', (event) => {
+    //       const value = new TextDecoder().decode(event.target.value).trim();
+    //       if (value === "OCCUPIED") {
+    //         if (spotCounts.A > 0) spotCounts.A--;
+    //         document.getElementById("count-A").textContent = spotCounts.A;
+    //       }
+    //     });
+    //   })
+    //   .catch(error => {
+    //     console.error("BLE Error:", error);
+    //     alert("Could not connect to BLE sensor.");
+    //   });
+    // }
   </script>
 </body>
 </html>
