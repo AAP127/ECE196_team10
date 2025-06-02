@@ -41,7 +41,7 @@
   }
 </style>
 
-<nav style="background-color: white; padding: 1em;">
+<nav style="background-color: rgb(224, 232, 249); padding: 1em;">
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
