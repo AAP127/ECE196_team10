@@ -74,3 +74,20 @@ Aron Bariagabr (Left), Aatash Pestonjamasp (Middle), Fernando Salgado (Right)
 
 This project is being developed as part of our ECE 196: Engineering Hands-on Group Project course at UCSD. 
 
+### More Links
+
+#### Poster
+[Click here](https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing)
+
+#### Mini Projects
+Aron: [Click here]()
+
+Aatash: [Click here]()
+
+Fernando: [Click here]()
+
+#### Video
+_To be added_
+
+#### References
+
