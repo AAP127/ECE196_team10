@@ -2,7 +2,7 @@
 <style>
   body {
     background-color:rgb(243, 240, 250);
-    color:rgb(12, 39, 65);
+    color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;

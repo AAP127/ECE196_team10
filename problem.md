@@ -3,21 +3,21 @@
 <style>
   body {
     background-color:rgb(200, 247, 253);
-    color: #00274C;
+    color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
 
   nav {
-    background-color: #FFD100;
+    background-color:rgb(205, 0, 0);
     padding: 1em;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   nav a {
-    color: #00274C;
+    color:rgb(0, 24, 47);
     margin: 0 15px;
     font-weight: bold;
     text-decoration: none;
@@ -51,10 +51,6 @@
   <a href="/ECE196_team10/team">About Us</a>
 </nav>
 
-<div class="content">
-
-# Our Focus
-
 ## The Problem
 
 As a student, it can be difficult to find parking for classes, especially during congested times of the day. This is especially true for students using campus parking structures. **Knowing how many spots are available gives better context for a student to understand where they might want to park, or if they should come to campus at all.**
@@ -81,17 +77,23 @@ Students currently rely on a few imperfect options:
 - **UCSD Parking Estimates** (based on data from the first two weeks of the quarter)
 
 <img src="source/problem/parking_estimate_website.JPG" alt="Parking estimate screenshot" width="40%">
-<small>*https://transportation.ucsd.edu/commute/availability.html</small>
+<small>
+
+*https://transportation.ucsd.edu/commute/availability.html</small>
 
 - **Live Displays** outside parking structures (only visible on-site)
 
 <img src="source/problem/parking_display.jpg" alt="Parking availability display" width="40%">
-<small>*Image credit: https://today.ucsd.edu/story/parking-on-campus-theres-an-app-for-that</small>
+<small>
+
+*Image credit: https://today.ucsd.edu/story/parking-on-campus-theres-an-app-for-that</small>
 
 - **UCSD Parking App** (provides general spot percentages but lacks detail by permit type)
 
 <img src="source/problem/ucsd_app.jpg" alt="UCSD App" width="25%">
-<small>*Image credit: https://today.ucsd.edu/story/parking-on-campus-theres-an-app-for-that</small>
+<small>
+
+*Image credit: https://today.ucsd.edu/story/parking-on-campus-theres-an-app-for-that</small>
 
 ---
 
