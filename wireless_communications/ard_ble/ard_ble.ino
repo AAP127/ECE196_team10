@@ -12,9 +12,39 @@
 #include <BLEServer.h>
 #include <BLEUtils.h>
 #include <BLE2902.h>
+#include <NewPing.h>
 
-#define TRIGPIN 35// Pin to send trigger pulse
-#define ECHOPIN 36// Pin to receive echo pulse
+
+#define upper_limit_inCM  130
+
+#define Trig1  33  // Sensor 1 Trigger
+#define Echo1  47   // Sensor 1 Echo
+
+#define Trig2  26   // Sensor 2 Trigger
+#define Echo2  21 // Sensor 2 Echo
+
+
+//LED indicator sensor pins
+//#define LEDA   46     
+//#define LEDB
+#define LEDS   38
+//#define LEDV
+
+#define LED_Occupied    36
+#define LED_Available   35
+
+#define Max_distance 400
+#define Threshold_inCM 50  
+#define Sample_duration 1000
+#define Sample_interval 50
+
+NewPing sonar1(Trig1, Echo1, Max_distance);
+NewPing sonar2(Trig2, Echo2, Max_distance);
+
+
+//Sensor state set up
+bool sensor1_detect = false;
+bool sensor2_detect = false;
 
 
 BLEServer* pServer = NULL;
@@ -39,14 +69,14 @@ uint32_t value = 0;
 #define SERVICE_UUID        "19b10000-e8f2-537e-4f6c-d104768a1214"
 
 //Uncomment for Sensor0
-// #define SENSOR_CHARACTERISTIC_UUID "19b10001-e8f2-537e-4f6c-d104768a1214"
-// #define DEVICE_NUM    "0"
-// String device_mode = "S";
+ #define SENSOR_CHARACTERISTIC_UUID "19b10001-e8f2-537e-4f6c-d104768a1214"
+ #define DEVICE_NUM    "0"
+ String device_mode = "S";
 
 //Uncomment for Sensor1
-#define SENSOR_CHARACTERISTIC_UUID "19b10002-e8f2-537e-4f6c-d104768a1214"
-#define DEVICE_NUM    "1"
-String device_mode = "A";
+//#define SENSOR_CHARACTERISTIC_UUID "19b10002-e8f2-537e-4f6c-d104768a1214"
+//#define DEVICE_NUM    "1"
+//String device_mode = "A";
 
 
 
@@ -64,14 +94,18 @@ class MyServerCallbacks: public BLEServerCallbacks {
 
 
 void setup() {
+ 
+ 
   Serial.begin(115200);
 
-  //Sample sensor code setup
-  pinMode(ECHOPIN, INPUT);
-  pinMode(TRIGPIN, OUTPUT);
 
-
-
+  //initialize LED pins as outputs
+  //  pinMode(LEDA, OUTPUT);
+ // pinMode(LEDB, OUTPUT);
+  pinMode(LEDS, OUTPUT);
+  //pinMode(LEDV, OUTPUT);
+  pinMode(LED_Occupied, OUTPUT);
+  pinMode(LED_Available, OUTPUT);
 
   // Create the BLE Device
   String device_id = String("ESP32-Sensor") + String(DEVICE_NUM);
@@ -114,31 +148,120 @@ void setup() {
 
 
 void loop() {
-  //Sample sensor polling code and occupancy detection
-  digitalWrite(TRIGPIN, LOW); // Set the trigger pin to low for 2uS
-  delayMicroseconds(2);
-  digitalWrite(TRIGPIN, HIGH); // Send a 10uS high to trigger ranging
-  delayMicroseconds(10);
-  digitalWrite(TRIGPIN, LOW); // Send pin low again
-  int distance = pulseIn(ECHOPIN, HIGH,26000); // Read in times pulse
-  distance= distance/58;
-  Serial.print(distance);
-  Serial.println(" cm");
-  delay(50);// Wait 50mS before next ranging
+ 
 
-  //Example threshold detection, replace this with alogrithm to average detections across both sensors
-  int available = 0;
-  if (distance > 30){
-    available = 1;
+  digitalWrite(LEDS, HIGH);
+
+  //cases for led modes
+  //how can we make cases : idea , we want led to light up depending on what sensor youre looking at
+   // determine what led turns on
+  
+
+
+
+  unsigned long startTime = millis();
+  int count1 = 0, count2 = 0;
+  int sum1 = 0, sum2 = 0;
+
+  while (millis() - startTime < Sample_duration) {
+    int distance1 = sonar1.ping_cm();
+    int distance2 = sonar2.ping_cm();
+
+    if (distance1 > 0) {
+      sum1 += distance1;
+      count1++;
+    }
+
+    if (distance2 > 0) {
+      sum2 += distance2;
+      count2++;
+    }
+
+    delay(Sample_interval);
   }
 
+  float avgDistance1 = -1;
+  float avgDistance2 = -1;
+  
 
-  //Temporary overwrite of dist and avail for testing (since sensor isn't conencted to esp)
-  distance = value;
-  if(distance %2 == 0){
-    available = 0;
+ //take averages of sensor distances collected over duration of sample size
+
+ if (count1 > 0) {
+  avgDistance1 = (float)sum1 / count1;
   }
 
+ if (count2 > 0) {
+  avgDistance2 = (float)sum2 / count2;
+ }
+
+// sets boolean state to detecting to true if average distance is greater than zero and average distance is less than the threshold
+
+ sensor1_detect = (avgDistance1 > 0 &&avgDistance1 < Threshold_inCM);
+ sensor2_detect = (avgDistance2 > 0 &&avgDistance2 < Threshold_inCM);  
+
+  
+//now, we need to determine what mode the device is in (what spot its in), create a state for each mode?
+ Serial.println(avgDistance1);   Serial.print(" cm");
+
+ Serial.println(avgDistance2);   Serial.print(" cm");
+  bool available;     // initialize availability to be passed to website
+  int distance = 0;  // initialize distance to be passed to website
+
+Serial.println("=== Vehicle Detection Status ===");
+
+
+  if (sensor1_detect && !sensor2_detect) {
+    Serial.println("Using Sensor 1");
+    Serial.print("Avg Distance: "); Serial.print(avgDistance1); Serial.println(" cm");
+    Serial.println("Vehicle detected by Sensor 1");
+    available = true; 
+    distance = avgDistance1;
+
+   // digitalWrite(LED_Occupied, High);
+    //digitalWrite(LED_Available,Low);
+
+  } else if (!sensor1_detect && sensor2_detect) {
+    Serial.println("Using Sensor 2");
+    Serial.print("Avg Distance: "); Serial.print(avgDistance2); Serial.println(" cm");
+    Serial.println("Vehicle detected by Sensor 2");
+    available = true;
+    distance = avgDistance2;
+    //digitalrite(LED_Occupied, High);
+    //digitalWrite(LED_Available,Low);
+
+  } else if (sensor1_detect && sensor2_detect) {
+    Serial.println("Both sensors detect vehicle. Prioritizing Sensor 1.");
+    Serial.print("Avg Distance (Sensor 1): "); Serial.print(avgDistance1); Serial.println(" cm");
+    Serial.println("Vehicle detected by Sensor 1");
+    available = true;
+    distance  = avgDistance1;  // can change but if both sensors are detecting a vehicle, prioritize sensor 1
+    //digitalWrite(LED_Occupied, HIGH);
+    //digitalWrite(LED_Available,Low);
+
+  } else {  // this else statement will be true if both senors aren't detecting a vehicle
+    Serial.println("No vehicle detected by either sensor.");
+    available = false;
+    distance = 0;
+   // digitalWrite(LED_Available, HIGH);
+    //digitalWrite(LED_Occupied, LOW);
+  }
+
+  Serial.println("===============================\n");
+  
+  if(sensor1_detect || sensor2_detect){
+    digitalWrite(LED_Available, LOW);
+    digitalWrite(LED_Occupied, HIGH);
+    
+  }
+ 
+
+  if(!sensor1_detect && !sensor2_detect) {
+    digitalWrite(LED_Occupied, LOW);
+    digitalWrite(LED_Available, HIGH);
+
+  }
+
+ 
 
   // notify changed value
   if (deviceConnected) {
