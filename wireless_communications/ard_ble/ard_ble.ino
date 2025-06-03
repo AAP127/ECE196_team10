@@ -247,6 +247,13 @@ Serial.println("=== Vehicle Detection Status ===");
     Serial.println("No vehicle detected by either sensor.");
     available = false;
     distance = 0;
+
+    if(avgDistance1 > avgDistance2) {
+      distance = avgDistance1;
+    }
+    if(avgDistance2 > avgDistance1){
+      distance = avgDistance2;
+    }
    // digitalWrite(LED_Available, HIGH);
     //digitalWrite(LED_Occupied, LOW);
   }
