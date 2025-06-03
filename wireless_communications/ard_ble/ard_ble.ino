@@ -20,15 +20,9 @@
 #define Trig1  33  // Sensor 1 Trigger
 #define Echo1  47   // Sensor 1 Echo
 
-#define Trig2  26   // Sensor 2 Trigger
-#define Echo2  21 // Sensor 2 Echo
+#define Trig2  21   // Sensor 2 Trigger
+#define Echo2  26 // Sensor 2 Echo
 
-
-//LED indicator sensor pins
-//#define LEDA   46     
-//#define LEDB
-#define LEDS   38
-//#define LEDV
 
 #define LED_Occupied    36
 #define LED_Available   35
@@ -68,6 +62,17 @@ uint32_t value = 0;
 */
 #define SERVICE_UUID        "19b10000-e8f2-537e-4f6c-d104768a1214"
 
+
+
+
+//LED indicator sensor pins
+// #define LED   37     //A
+//#define LED 38      //B
+#define LED   48     //S
+//#define LED 34     //V
+
+
+
 //Uncomment for Sensor0
  #define SENSOR_CHARACTERISTIC_UUID "19b10001-e8f2-537e-4f6c-d104768a1214"
  #define DEVICE_NUM    "0"
@@ -102,7 +107,7 @@ void setup() {
   //initialize LED pins as outputs
   //  pinMode(LEDA, OUTPUT);
  // pinMode(LEDB, OUTPUT);
-  pinMode(LEDS, OUTPUT);
+  pinMode(LED, OUTPUT);
   //pinMode(LEDV, OUTPUT);
   pinMode(LED_Occupied, OUTPUT);
   pinMode(LED_Available, OUTPUT);
@@ -150,7 +155,7 @@ void setup() {
 void loop() {
  
 
-  digitalWrite(LEDS, HIGH);
+  digitalWrite(LED, HIGH);
 
   //cases for led modes
   //how can we make cases : idea , we want led to light up depending on what sensor youre looking at
@@ -248,6 +253,12 @@ Serial.println("=== Vehicle Detection Status ===");
 
   Serial.println("===============================\n");
   
+  // Available as written above is true when the spot is occupied
+  //Server expects true when spot is free, so flip before sending
+  available = !available;
+
+
+
   if(sensor1_detect || sensor2_detect){
     digitalWrite(LED_Available, LOW);
     digitalWrite(LED_Occupied, HIGH);
