@@ -76,20 +76,21 @@ This project is being developed as part of our ECE 196: Engineering Hands-on Gro
 
 ### More Links
 
+#### Video
+_To be added_
+
 #### Poster
 [Click here](https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing)
 
-#### Mini Projects
+## Mini Projects
 Aron: [Click here](https://github.com/ECE-196/docs/pull/29)
 
 Aatash: [Click here](https://github.com/ECE-196/docs/pull/27)
 
 Fernando: [Click here](https://github.com/ECE-196/docs/pull/28)
 
-#### Video
-_To be added_
 
-#### References
+## Additional resources we used in this project
 
 [HC-SR04 Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf)
 

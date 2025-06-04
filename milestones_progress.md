@@ -64,6 +64,13 @@ This page contains our milestones and project progress. Additionally, the progre
 Click [here](#week-5) or scroll down to read about our progress.
 
 
+#### Week 10
+- We finished our full data collection and distribution pipeline. The sensors connect to a computer dashboard, which updates a database. Ultimately, our website displays this updated information. The device itself also shows physical LED indicators for on site status viewing.
+
+
+<video width="1064" height="600" controls> <source src="source/milestones_updates/integration.mp4" type="video/mp4"> </video>
+\* An example of the sensor operating as a visitor spot parking detector
+
 #### Week 9
 - We successfully printed an <strong>enclosure</strong> for our device
 - We assembled first prototype PCB, making wiring additions for the logic level shifter as needed.
@@ -78,6 +85,7 @@ Click [here](#week-5) or scroll down to read about our progress.
 
 #### Week 8
 - While we did not finish our enclosure, we began deciding the shape of it and narrowing down the design constrains on it, including how it should look, what spacing we should have, etc.
+- We also decided to abandon trying to update the website via serial, as we wanted to focus our attention to wireless communication, rather than making two communication methods.
 - We tested bluetooth communication, and were able to use multiple ESP's in order to <u>update a test webpage</u>.
 
 <img src="source/milestones_updates/bluetooth_comms.JPG" alt="Image of algorithm operation" width="60%" height="auto">
