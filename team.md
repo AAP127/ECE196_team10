@@ -98,3 +98,5 @@ _To be added_
 [DigiKey Electrical Calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-led-series-resistor)
 
 [Google Firebase](https://console.firebase.google.com)
+
+[NewPing Repository](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
