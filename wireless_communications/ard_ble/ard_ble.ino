@@ -66,17 +66,17 @@ uint32_t value = 0;
 
 
 //LED indicator sensor pins
-// #define LED   37     //A
-//#define LED 38      //B
-#define LED   48     //S
-//#define LED 34     //V
+#define LED   37     //A
+// #define LED 38      //B
+// #define LED   48     //S
+// #define LED 34     //V
 
 
 
 //Uncomment for Sensor0
  #define SENSOR_CHARACTERISTIC_UUID "19b10001-e8f2-537e-4f6c-d104768a1214"
  #define DEVICE_NUM    "0"
- String device_mode = "S";
+ String device_mode = "A";
 
 //Uncomment for Sensor1
 //#define SENSOR_CHARACTERISTIC_UUID "19b10002-e8f2-537e-4f6c-d104768a1214"

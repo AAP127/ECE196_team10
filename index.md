@@ -68,7 +68,7 @@ Welcome to our team's website! We are interested in improving the UCSD student e
 
 Parking on campus at UCSD can be quite challenging during busy times, and students may struggle in deciding whether to drive to campus, or arrive another way. Using ultrasonic sensors to detect parking occupancy, and wirelessly sending this information to a live webpage, our project aims to help students be more informed about the current parking situation on campus, making commuting more efficient and less stressful.
 
-
+\* To view our **Mini Projects** and **Resources**, please visit our [About Us](team.md) page
 
 <img src="source/index/ECE_dept_logo.png" alt="ECE Depatment Logo" width="50%">
 
