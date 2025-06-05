@@ -101,7 +101,7 @@ Click [here](#week-5) or scroll down to read about our progress.
 
 <img src="source/milestones_updates/python_serial.JPG" alt="Image of python serial detections" width="30%" height="auto">
 
-<img src="source/ireless_communications/Test_Graph.png" alt="Image of algorithm operation" width="50%" height="auto">
+<img src="source/wireless_communications/Test_Graph.png" alt="Image of algorithm operation" width="50%" height="auto">
 
 
 
