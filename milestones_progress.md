@@ -80,7 +80,7 @@ It is also worth considering a wired data transfer setup, to reduce congestion o
 
 Our team relied on Google Firebase to store our parking information reported by the dashboard. Parking services or the group responsible for this deployment may ultimately want to create a database on-site, or make other considerations, epsecially as more live traffic flows through the database and if they consider parking data to be confidential.
 
-Additionally, switching to a UCSD hosted or other hosting domain may ensure no issues with student/ user traffic to the main website, as the current site is hosted on github pages.
+Additionally, switching to a UCSD hosted or other hosting domain may ensure no issues with the amount of student/ user traffic to the main website, as the current site is hosted on github pages.
 
 
 
