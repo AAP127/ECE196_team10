@@ -50,6 +50,9 @@
 </style>
 
 <nav style="background-color: rgb(218, 227, 245); padding: 1em;">
+
+
+
   <a href="/ECE196_team10/" style="color:#000; margin-right: 15px; text-decoration: underline;">Home</a>
   <a href="/ECE196_team10/problem" style="color:#000; margin-right: 15px; text-decoration: underline;">The Problem</a>
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
