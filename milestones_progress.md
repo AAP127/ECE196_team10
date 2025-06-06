@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
   body {
     background-color:rgb(200, 232, 242);
@@ -100,6 +100,9 @@ Click [here](#week-5) or scroll down to read about our progress.
 <img src="source/milestones_updates/algorithm_example.JPG" alt="Image of algorithm operation" width="50%" height="auto">
 
 <img src="source/milestones_updates/python_serial.JPG" alt="Image of python serial detections" width="30%" height="auto">
+
+<img src="source/milestones_updates/Test_Graph.png" alt="Image of Car Detection Test" width="35%" height="auto">
+
 
 
 
