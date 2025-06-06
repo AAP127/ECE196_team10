@@ -79,8 +79,8 @@ We have created a 4 layer PCB board to support our smart parking indicator syste
 
 
 ### 2. PCB Schematic and Diagram
-<img src="source/pcb/PCB_annotated2.png" alt="PCB Board Diagram" width="48.5%" height="auto">
-<img src="source/pcb/3D_PCB.png" alt="PCB 3D Model" width="45%" height="auto">
+<img src="source/pcb/PCB_annotated.png" alt="PCB Board Diagram" width="48.5%" height="auto">
+<img src="source/pcb/PCB_annotated2.png" alt="PCB 3D Model" width="45%" height="auto">
 
 
 ### 3. Physical Board
