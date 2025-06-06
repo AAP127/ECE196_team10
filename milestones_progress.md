@@ -61,14 +61,14 @@ This page contains our milestones and project progress from during the project's
 
 ## Final Limitations/ Considerations for Deployment
 
-<u>*Sensing:*</u>
+<u>Sensing:</u>
 
 The HC-SR04 ultrasonic sensor is an afforable solution and performed reasonably well for our project's needs, including detection of a real car. With this said, consideration of other, potentially more robust, ultrasonic sensors would help ensure inmproved durability and reliability. Our team did try to consider the usage of a more advanced JSN-SR04 sensor, however (as noted below in our week 6 update) the units we recieved unfortunately would not correctly report distance.
 
  Beyond ultrasonic sensing, consideration of other sensing methods, such as time-of-flight, could also be used to more thouroughly compare what may ultimately work best.
 
 
-<u> *Connection Protocol/ Networking Setup:*</u>
+<u> Connection Protocol/ Networking Setup:</u>
 
 Our current setup uses Bluetooth-Low-Energy (BLE) to connect the ESP32-sensor devices to the computer dashboard. In a real deployment, the number of devices connected per computer server could potentially become an issue, either requiring many computer servers, or potentially a different networking protocol. Alternative protocols could include WiFi or 802.15.4 for more mesh-style networking. It is worth noting that changes could need to be made to the microcontroller setup, as the ESP32 S3 Dev Modules we used support BLE and Wifi.
 
@@ -76,7 +76,7 @@ It is also worth considering a wired data transfer setup, to reduce congestion o
 
 
 
-<u>*Database/ Web Distribution:*</u>
+<u>Database/ Web Distribution:</u>
 
 Our team relied on Google Firebase to store our parking information reported by the dashboard. Parking services or the group responsible for this deployment may ultimately want to create a database on-site, or make other considerations, epsecially as more live traffic flows through the database and if they consider parking data to be confidential.
 
