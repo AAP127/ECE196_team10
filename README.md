@@ -1,4 +1,6 @@
-The following components are in this project:
+# ECE 196 Spring 2025 Team 10- Gotta Park Fast
+
+This repository contains the software files for our project, including the following components:
 
 
 * *ESP code to register sensor pulses, LEDs, and connect to the dashboard via bluetooth*: located in wireless_communication/ard_ble/ard_ble.ino
