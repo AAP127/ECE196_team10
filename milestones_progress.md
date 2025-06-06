@@ -57,11 +57,39 @@
 </nav>
 
 # Our Milestones and Progress
-This page contains our milestones and project progress. Additionally, the progress of our presentation materials- this includes our website, poster, and video, can be found below.
+This page contains our milestones and project progress from during the project's duration, along with limitations and considerations for a real deployment, which our team identified after the project. Additionally, the progress of our presentation materials- this includes our website, poster, and video, can be found below.
+
+## Final Limitations/ Considerations for Deployment
+
+<u>*Sensing:*</u>
+
+The HC-SR04 ultrasonic sensor is an afforable solution and performed reasonably well for our project's needs, including detection of a real car. With this said, consideration of other, potentially more robust, ultrasonic sensors would help ensure inmproved durability and reliability. Our team did try to consider the usage of a more advanced JSN-SR04 sensor, however (as noted below in our week 6 update) the units we recieved unfortunately would not correctly report distance.
+
+ Beyond ultrasonic sensing, consideration of other sensing methods, such as time-of-flight, could also be used to more thouroughly compare what may ultimately work best.
+
+
+<u> *Connection Protocol/ Networking Setup:*</u>
+
+Our current setup uses Bluetooth-Low-Energy (BLE) to connect the ESP32-sensor devices to the computer dashboard. In a real deployment, the number of devices connected per computer server could potentially become an issue, either requiring many computer servers, or potentially a different networking protocol. Alternative protocols could include WiFi or 802.15.4 for more mesh-style networking. It is worth noting that changes could need to be made to the microcontroller setup, as the ESP32 S3 Dev Modules we used support BLE and Wifi.
+
+It is also worth considering a wired data transfer setup, to reduce congestion over the air. This also may not be too impractical given that the microntrollers may also need wiring to supply power.
+
+
+
+<u>*Database/ Web Distribution:*</u>
+
+Our team relied on Google Firebase to store our parking information reported by the dashboard. Parking services or the group responsible for this deployment may ultimately want to create a database on-site, or make other considerations, epsecially as more live traffic flows through the database and if they consider parking data to be confidential.
+
+Additionally, switching to a UCSD hosted or other hosting domain may ensure no issues with student/ user traffic to the main website, as the current site is hosted on github pages.
+
+
 
 
 ## Milestones
 ![Milestone Timeline Image](source/milestones_updates/new_milestones.jpg)
+
+
+
 
 
 
@@ -71,7 +99,7 @@ Click [here](#week-5) or scroll down to read about our progress.
 
 #### Week 10
 - We finished our full data collection and distribution pipeline. The sensors connect to a computer dashboard, which updates a database. Ultimately, our website displays this updated information. The device itself also shows physical LED indicators for on site status viewing.
-- A live demo of reporting a spot's availability with a real car can be found in the demo section of our team's video
+- A demonstration of reporting a spot's availability with a real car in our team's [video](https://drive.google.com/file/d/1jj1QcZ62BZAWAesPke6ln_tHwNwHV5pS/view?usp=sharing) (skip to 3:00 for live demo)
 
 
 <video width="1064" height="600" controls> <source src="source/milestones_updates/integration.mp4" type="video/mp4"> </video>
