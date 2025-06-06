@@ -70,9 +70,9 @@ The HC-SR04 ultrasonic sensor is an afforable solution and performed reasonably 
 
 <u> Connection Protocol/ Networking Setup:</u>
 
-Our current setup uses Bluetooth-Low-Energy (BLE) to connect the ESP32-sensor devices to the computer dashboard. In a real deployment, the number of devices connected per computer server could potentially become an issue, either requiring many computer servers, or potentially a different networking protocol. Alternative protocols could include WiFi or 802.15.4 for more mesh-style networking. It is worth noting that changes could need to be made to the microcontroller setup, as the ESP-32 S3 Dev Modules we used support BLE and Wifi.
+Our current setup uses Bluetooth-Low-Energy (BLE) to connect the ESP32-sensor devices to the computer dashboard. In a real deployment, the number of devices connected per computer server could potentially become an issue, either requiring many computer servers, or potentially a different networking protocol. Alternative protocols could include Wi-Fi or 802.15.4 for more mesh-style networking. It is worth noting that changes could need to be made to the microcontroller setup, as the ESP-32 S3 Dev Modules we used support BLE and Wi-fi.
 
-It is also worth considering a wired data transfer setup, to reduce congestion over the air. This also may not be too impractical given that the microntrollers may also need wiring to supply power.
+It is also worth considering a wired data transfer setup, to reduce congestion over the air. This may not be too impractical, given that the microntrollers will also need wiring to supply power, unless a battery system is used instead.
 
 
 
