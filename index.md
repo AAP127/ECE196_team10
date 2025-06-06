@@ -55,6 +55,8 @@
   <a href="/ECE196_team10/solution" style="color: #000; margin-right: 15px; text-decoration: underline;">Our Solution</a>
   <a href="/ECE196_team10/milestones_progress" style="color:#000; margin-right: 15px; text-decoration: underline;"> Milestones and Progress </a>
   <a href="/ECE196_team10/pcb" style="color:#000;margin-right: 15px;  text-decoration: underline;">Our PCB</a>
+  <a href="https://docs.google.com/presentation/d/1rFXBSj3DbrjLsAPUIrnIcoYYUYrfbvTKr-7pOcrXOec/edit?usp=sharing" style="color:#000;margin-right: 15px;  text-decoration: underline;">Poster</a>
+  <a href="https://drive.google.com/file/d/1jj1QcZ62BZAWAesPke6ln_tHwNwHV5pS/view?usp=sharing" style="color:#000;margin-right: 15px;  text-decoration: underline;">Video</a>
   <a href="/ECE196_team10/team" style="color:#000; margin-right: 15px; text-decoration: underline;">About Us</a>
   <a href="/ECE196_team10/application_website_GPF/index.html" style="color:#000; margin-right: 15px; text-decoration: underline;">Our Application</a>
 </nav>
@@ -68,9 +70,12 @@ Welcome to our team's website! We are interested in improving the UCSD student e
 
 Parking on campus at UCSD can be quite challenging during busy times, and students may struggle in deciding whether to drive to campus, or arrive another way. Using ultrasonic sensors to detect parking occupancy, and wirelessly sending this information to a live webpage, our project aims to help students be more informed about the current parking situation on campus, making commuting more efficient and less stressful.
 
-\* To view our **Mini Projects** and **Resources**, please visit our [About Us](team.md) page
+\* To view our **Mini Project #3 Tutorials** and **Resources**, 
+please visit our [About Us](team.md) page
 
-<img src="source/index/ECE_dept_logo.png" alt="ECE Depatment Logo" width="50%">
+\* To view our main project webpage, please visit our [Application](application_website_GPF/index.html) page
+
+<img src="source/index/ECE_dept_logo.png" alt="ECE Department Logo" width="50%">
 
 ![Geisel Library](source/index/geisel.jpg)
 

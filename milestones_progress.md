@@ -66,6 +66,7 @@ Click [here](#week-5) or scroll down to read about our progress.
 
 #### Week 10
 - We finished our full data collection and distribution pipeline. The sensors connect to a computer dashboard, which updates a database. Ultimately, our website displays this updated information. The device itself also shows physical LED indicators for on site status viewing.
+- A live demo of reporting a spot's availability with a real car can be found in the demo section of our team's video
 
 
 <video width="1064" height="600" controls> <source src="source/milestones_updates/integration.mp4" type="video/mp4"> </video>

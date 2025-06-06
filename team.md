@@ -86,7 +86,10 @@ _To be added_
 
 
 
-## Mini Projects
+## Mini Projects #3 Tutorials
+Below are the links to each member's mini project 3 tutorial. These tutorials are to be used by future ECE 196 students.
+
+
 Aron: [Click here](https://github.com/ECE-196/docs/pull/29)
 
 Aatash: [Click here](https://github.com/ECE-196/docs/pull/27)
@@ -94,14 +97,16 @@ Aatash: [Click here](https://github.com/ECE-196/docs/pull/27)
 Fernando: [Click here](https://github.com/ECE-196/docs/pull/28)
 
 
-## Additional resources we used in this project
+## Resources
 
-[HC-SR04 Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf)
+Below are links to resources we used in the development of our project.
 
-[ESP-32 Bluetooth Tutorial](https://randomnerdtutorials.com/esp32-web-bluetooth/)
+[HC-SR04 Ultrasonic Sensor Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf)
 
-[DigiKey Electrical Calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-led-series-resistor)
+[ESP-32 Basic Bluetooth Setup Tutorial](https://randomnerdtutorials.com/esp32-web-bluetooth/)
 
-[Google Firebase](https://console.firebase.google.com)
+[DigiKey LED Resistor Electrical Calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-led-series-resistor)
 
-[NewPing Repository](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
+[Google Firebase (Used for Database Hosting)](https://console.firebase.google.com)
+
+[NewPing Repository (Used for Ultrasonic Sensor Signal Reading)](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home)
