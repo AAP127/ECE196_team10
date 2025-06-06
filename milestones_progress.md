@@ -135,8 +135,10 @@ Click [here](#week-5) or scroll down to read about our progress.
 
 <img src="source/milestones_updates/python_serial.JPG" alt="Image of python serial detections" width="30%" height="auto">
 
-<img src="source/milestones_updates/Test_Graph.png" alt="Image of Car Detection Test" width="35%" height="auto">
+<img src="source/milestones_updates/Test_Graph.png" alt="Image of Car Detection Test" width="45%" height="auto">
 
+
+<small>\* This plot shows the raw distance that the sensor reads (blue) and the averaged value from our algorithm (orange). It first simulates an object approaching the sensor (such as a car), then leaving. Average distance is compared to the detection threshold (red) to determine occupancy of the parking spot. The raw sensor data can occasionally be inconsistent with peaks and dips, however the average value smooths out these changes, allowing parking detection to be less sporadic and more controlled.</small>
 
 
 
