@@ -106,13 +106,16 @@ Click [here](#week-5) or scroll down to read about our progress.
 \* An example of the sensor operating as a visitor spot parking detector
 
 #### Week 9
-- We successfully printed an <strong>enclosure</strong> for our device
+- We successfully printed and assembled an <strong>enclosure</strong> for our device
 - We assembled first prototype PCB, making wiring additions for the logic level shifter as needed.
 - We implemented a <strong>Google Firebase database</strong> in between the computer server and webfront for real time data updates and distribution. This involved assigning one offline webpage to be a <u>dashboard</u> to connect to the sensors and database, and the main page to <u>distribute</u> the information.
 - Real-time parking data transfer from the device to the website via Bluetooth is still being finalized.
 
 
 <img src="source/pcb/PCB_Enclosure.jpg" alt="Image of algorithm operation" width="50%" height="auto">
+
+
+<img src="source/milestones_updates/enclosure_assembled.JPG" alt="Image of assembled enclosure" width="50%" height="auto">
 
 <img src="source/milestones_updates/firebase.JPG" alt="Image of algorithm operation" width="50%" height="auto">
 
