@@ -66,9 +66,9 @@ We have created a 4 layer PCB board to support our smart parking indicator syste
 
 - It features **dual-row header pins** (J1 and J2) to connect to the ESP32 .
 
-- Four LEDs with resistors labeled R3-R6 serve as **parking mode indicators**. They indicate if the device is reporting for an A, B, S, or V spot. 
+- Four LEDs with resistors labeled R1, R2, R5, and R6, serve as **parking mode indicators**. They indicate if the device is reporting for an A, B, S, or V spot. 
 
-- The other two LEDs with resistors labeled R1 and R2 show **real-time availability** (i.e. if the spot is detected as occupied or not). 
+- The other two LEDs with resistors labeled R3 and R4 show **real-time availability** (i.e. if the spot is detected as occupied or not). 
   
 - Two 4-pin connectors (J3 and J6) will support  **HC-SR04 ultrasonic sensors** to detect vehicle presence. 
   
